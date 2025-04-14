@@ -1,0 +1,33 @@
+1절. 리스트(list) : lst = [타입과 관련없는 0개 이상의 데이터들]
+	len(lst) : 데이터 갯수 (요소 갯수)
+	min(lst), max(lst), sum(lst) = 최소, 최대, 합 (레버리지는 없음),sorted(lst,reverse=True)  출력만 순서 바뀔때
+	data in lst : lst안의 data 요소가 있는지 여부 (있으면 True,없으면 False)
+	lst[idx], lst[from:stop:step] 인덱싱과 슬라이싱
+	추가 : lst.append(value), lst.insert(idx, value) 
+	삭제 : lst.pop() -맨뒤에 삭제, lst.pop(idx)-특정한것 삭제, lst.remove(data) - 지울 data 지정
+	찾기 : lst.index(data) : data가 어디에 있는지 확인(오류날 수 있음.in연산자랑 같이 써야함) - 위치 찾기
+	         lst.count(data) : 몇개있는지 확인
+	정렬 : lst.sort(reverse=True) 리스트 자체의 순서를 바꿀 때 
+	역순 : lst.reverse() 
+	
+2절. 튜플 : tup = (data) 수정 불가 (*따라서 추가,삭제안 됨)
+	len(tup) : 데이터 갯수 (요소 갯수)
+	min(tup), max(tup), sum(tup) = 최소, 최대, 합 (레버리지는 없음),sorted(tup,reverse=True)  출력만 순서 바뀔때
+	data in lst : tup안의 data 요소가 있는지 여부 (있으면 True,없으면 False)
+	tup[idx], tup[from:stop:step] 인덱싱과 슬라이싱
+	찾기 : tup.index(data) : data가 어디에 있는지 확인(오류날 수 있음.in연산자랑 같이 써야함) - 위치 찾기
+	         tup.count(data) : 몇개있는지 확인
+
+3절.딕셔너리 dic = {key1:value1,key2:value2,...}
+	데이터 읽기 : dic[key1] , dic.get(key1)
+ 	데이터 수정 : dic[key1]=수정할데이터
+	데이터 제거 : del dic[key1], dic.pop(key1)
+	데이터 추가 : dic[key9] = value9
+	dic.keys() : key들만 가져오는것  dic.value() : value들만 가져오는것 dic.item() : key와 value 다 가져오는것 
+
+4절. 셋 s = {date1, date2, date1} => {data1,data2} 중복허용 안함, 순서없음(인덱스 없음)
+	추가 : add(스칼라데이터), updatd(데이터 구조)
+	삭제 : remove(삭제할 데이터)
+	연산 : &(교집합) |(합집합) -(차집합)
+
+데이터구조를 for문을 이용하여 출력할 경우 enumerate를 사용한다.
