@@ -1,0 +1,26 @@
+1절. 패키지 및 모듈 사용 방법 
+	>기본 문법
+	import A : A모듈을 실행(load)
+	import A : A패키지밑의 __init___모듈을 실행(load)
+	from A import B : A패키지 안의 B모듈 실행(load)
+	from A import B : A모듈 안의 B함수 실행(load)
+	from A,B import C : A패키지밑의 B모듈안의 C함수 실행(load)
+
+	>별칭으로 실행 
+	import A as L : A모듈을 L이름으로 실행(load)
+	import A as L : A패키지를 L이름으로  __init__모듈을 실행(load)
+	from A import B as L : A패키지 안의 B모듈을 L이름으로 실행(load)
+	from A import B as L : A모듈 안의 B함수를 L이름으로 실행(load)
+	from A,B import C as L : A패키지밑의 B모듈안의 C함수를 L이름으로 실행(load)
+
+2절. 패키지 설치 및 삭제
+	- 패키지 설치 방법 : pip install 패키지명[==버전] / pip install 패키지화일명 (*whl 출저:pypi.org)
+	- 패키지 설치 확인 : pip show 패키지명
+	- 패키지 삭제 방법 : pip uninstall 패키지명 
+		(*삭제는 프로그램 충돌이 일어나는 경우에 많이 함. 아랫버전 다운받기 위해)
+    
+	- 아나콘다나, 미니콘다 설치 방법 : conda install 패키지명[==버전] (버전을 작성하지 않는다면 pip보다 한단계 낮은거로 설치)
+	- 아나콘다나, 미니콘다 설치 확인 : conda list 패키지명 
+	- 아나콘다나, 미니콘다 패키지 삭제 : conda remove 패키지명
+
+*패키지 아래 __init__.py에 패키지 설정 내용이 추가
