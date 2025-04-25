@@ -33,22 +33,37 @@ Numpy 패키지 함수와 속성
  resize(튜플) : 배열 변경 / -1을 사용할 수 없음 / 실행을 해도 결과 값이 안 나옴 
  ravel(),flatten() : 1차원으로 변경
  transpose() 나 .T : 전치행렬(행과 열을 뒤바꿈)
+ary[:,np.newaxis], np.expand_dims(ary,axis=1) : 차원증가
+
+-배열 요소별 집계 
+ sum, min, max, mean(평균), var(분산), std(표준편차), argmax(최대값이 있는 인덱스),argmax 인덱스를 통한 최대값을 찾기
 
 
+-배열연산
+ 요소별 연산,브로드 캐스팅
+ 행렬연산(2차원) @(dot함수), 단위행렬(정방행렬-np.eye(n))
+ 범용함수 np.add(), np.mulitply,...
 
+-배열 합치기
+ np.vstack(tup) : 아래로 (수직으로/행으로) 추가하는 방식
+ np.hstack(tup) : 옆으로 (수평으로/열으로) 추가하는 방식
+ np.dstack(tup) : 마지막 축(열)끼리 합침)
+ 
+ np.column_stack(tup) : 1차원 배열을 열단위로 배열하여 2차원으로 합침
+ np.row_stack(tup) : 행단위로 합침
+ np.stack(tup, axis) 
+ np.r_[a,b, ...] : row 단위로 쌓음
+ np.c_[a,b,...] : 컬럼으로 쌓아서 합침  
 
+- 배열분리
+ np.vsplit(ary,정수나 인덱스 벡터) == np.split(ary, 정수나 인덱스벡터, axis=0) : 첫번째 축을 따라 분리
+ np.hsplit(ary,정수나 인덱스 벡터) == np.split(ary, 정수나 인덱스벡터, axis=1) : 두번째 축을 따라 분리
+ np.dsplit(ary,정수나 인덱스 벡터) == np.split(ary, 정수나 인덱스벡터, axis=-1) : depth따라 나눔(3차원 이상에서만 동작)
+ np.array_split(ary, 정수나 인덱스벡터, axis) : 나눠지지 않는 정수로도 split 가능
+	정수n : n개 분리
+	   [n] : n번째 인덱스를 기점으로 분리
+	[m,n] : m번째 ,n번째 인덱스를 기점으로 분리 
 
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
