@@ -1,0 +1,48 @@
+ch.13 데이터 시각화(요약)
+1)그래프 커스터마이징
+	-figure(figsize=(가로,세로)) : 그래프 사이즈 조정
+	-alpha=숫자(0<n<1) 투명도는 0과 1사이에 숫자로 조정 
+	-axvline(수직선),axhline(수평선) : 수직선과 수평선 설정 
+	-linewidth=숫자 : 라인 굵기 설정
+	-linestyle='라인 스타일' : 라인 스타일 설정 (- / . / -- / -. )
+	-marker='표시할 모양' 그래프점을 표시할 모양 설정
+	-annotate('작성할 텍스트',xytext=(가로,세로 좌표),xy=(가로,세로)) : 그래프 위에 텍스트 올리는 방법
+		* arrowprops를 설정하여 arrowstyle='화살표 스타일',connectionstyle='화살표 꺾기정도'
+								#angle(꺾은선), arc(직선),angle3(부드러운 곡선)
+
+
+
+2)서브플롯 
+	nrows(가로) / ncols(세로) : 가로 세로 서브플롯으로 몇개 설정할 지 = col_wrap=(숫자) 범위내에 아래로 내리기
+3)pandas.DataFrame.plot()
+	plt.plot(x,y, fmt)
+	df.plot(x=열이름,y=열이름, kind='line',figsize, title, xlim, ylim...)
+		kind : line(기본값), scatter(점도표), bar(막대), barh, box, pie, density,...)
+		xlim, ylim : list/tuple
+
+
+4)데이터 정리
+	-결측치 관련
+	1)결측치 확인 방법 : isna(),isnull() + sum()
+	2)결측치 아닌지 확인 방법 : notna(),notnull() +sum()
+	-인덱스세팅
+		set_index('열이름') : 작성한 열을 index로 setting
+		reset_index():index를 열로 setting
+		변수이름.set_index('열이름', inplace=True) : 열이름을 기준으로 인덱스 변경
+	3)2차원 시리즈 만들기 
+	.to_frame() : 시리즈를 데이터 프레임으로 바꾸기
+	[['계산할 열이름']]
+
+5)데이터 집계
+	1)groupby
+	 변수명.groupby(["인덱스로사용할컬럼명"])["계산할 열이름"].연산함수()
+	2)pivot_table
+	변수명.pivot_table(index=["인덱스로사용할컬럼명"], values=["계산할 열이름"], aggfunc="연산함수명")
+	pd.pivot_table(변수명, index=["인덱스로사용할컬럼명"],values=["계산할 열이름"],aggfunc="연산함수명")
+
+
+	★지역별 데이터수 계산 방법
+	변수['열이름'].value_count() : 자동 정렬되나 결측치가 포함된 값으로 출력
+	변수.groupby('열이름')['계산할 열이름'].count().sort_values(ascending=False) : 결측치제외된 값으로 출력 
+
+
