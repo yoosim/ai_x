@@ -1,0 +1,15 @@
+[web과 html,CSS]
+
+VisualStudio :"Visual Studio 확장개발",".NET 데스크톱 개발" 추가 설치
+iisexpress_amd64_ko-KR.msi(웹서버) 설치
+
+ch02
+글자관련태그 : h1~h6, p , del , i , b , strong , ins , pre , a
+목록태그 : ul-li, ol-li
+표 : table - tr - td/th
+이미지태그 : img의 src속성(이미지 출력), alt 속성(이미지가 없으면 출력될 내용)
+오디오태그 :
+
+ch03
+Form태그:
+공간분할태그
