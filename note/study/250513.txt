@@ -1,0 +1,25 @@
+[web과 html,CSS]
+
+VisualStudio :"Visual Studio 확장개발",".NET 데스크톱 개발" 추가 설치
+iisexpress_amd64_ko-KR.msi(웹서버) 설치
+
+ch02
+글자관련태그 : h1~h6, p , del , i , b , strong , ins , pre , a
+목록태그 : ul-li, ol-li
+표 : table - tr - td/th
+이미지태그 : img의 src속성(이미지 출력), alt 속성(이미지가 없으면 출력될 내용)
+오디오태그 : src 속성, preload, controls
+
+ch03
+Form태그:<form> 
+	action/button/checkbox/file/hidden/image/password/radio/reset/submit/
+	autofocus(포커스 자동 설정)/placeholder(입력형식 힌트 제공)/required(필수 입력 필드)/pattern(조건을 사용한 일반식 표현)
+공간분할태그:div(블록형식의 태그)/span(라인형식의 태그)
+	div(id)
+시멘틱태그:
+	header:해더
+	nav:네비게이션
+	aside:사이드에 위치하는 공간
+	section:여러중심 내용을 감싸는 공간
+	article:글자가 많이 들어가는 부분
+	footer:꼬리말

@@ -8,7 +8,7 @@ ch02
 목록태그 : ul-li, ol-li
 표 : table - tr - td/th
 이미지태그 : img의 src속성(이미지 출력), alt 속성(이미지가 없으면 출력될 내용)
-오디오태그 :
+오디오태그 : src 속성, preload, controls
 
 ch03
 Form태그:

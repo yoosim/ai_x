@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #wrap{
+            width:750px;
+            margin:0 auto;
+        }
+        #header{text-align:center;}
+        #content{
+            border-top:1px solid ligthgray;
+            border-bottom:1px solid lightgray;
+         }
+        #content a{
+            text-decoration:none; /*밑줄없애기*/
+            color:blue;
+            font-size:24px;
+        }
+        #content a:after{/*링크 선택자*/
+            content: ' - 'attr(href);
+        }
+        #content li:not(.shop){/*부정 선택자*/
+            background-color:yellow;
+        }
+        #footer ul{ overflow:hidden;} /* 부모단에 overflow*/
+        #footer ul li{
+            float:left; /*수평으로 / left,right*/
+            list-style:none;
+            padding:15px;
+        }
+        #footer ul li:first-child{
+            padding-top:28px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1> las</h1>
+        </div>
+        <div id="content">
+            <ul>
+                <li><a href="http://www.naver.com" taget="_black">네이버</a></li>
+                <li><a href="http://www.google.com" taget="_black">구글</a></li>
+                <li><a href="http://www.daum.net" taget="_black">다음</a></li>
+                <li class="shop"><a href="http://www.coupang.co.kr" taget="_black">쿠팡</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><img src="ch04/logo.png" alt="고용노동부 로고"</li>
+                <li><img src="ch04/address.png" alt="주소"</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

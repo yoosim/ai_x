@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #wrap{
+            width:750px;
+            margin:0 auto;
+        }
+        #header{text-align:center;}
+        #content{
+            border-top:1px solid lightgray;
+            border-bottom:1px solid lightgray;
+            text-align:justify
+        }
+        #content p:nth-child(2)::first-line,
+        #content p:nth-child(3)::first-line{
+            font-weight:bold; /*글자 진하게*/
+            color:blue;
+        }
+        #content p:nth-child(2):first-letter,
+        #content p:last-child::first-letter{
+            font-size:2.5em; /*글자 크기를 2.5배*/
+        }
+        #footer ul{ overflow:hidden;} /* 부모단에 overflow*/
+        #footer ul li{
+            float:left; /*수평으로 / left,right*/
+            list-style:none;
+            padding:15px;
+        }
+        #footer ul li:first-child{
+            padding-top:28px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1> dnd?</h1>
+        </div>
+        <div id="content">
+            <p>오후에 기온 오름. 덥다</p>
+            <p>
+                장기적인 GPU 활용을 주도하게 될 '국가 AI 컴퓨팅 센터' 사업에 참여 계획을 밝힌 클라우드 기업을 중심으로 GPU 운영 주체를 선정한다. 국가 AI 컴퓨팅 센터 사업 주체인 특수목적법인(SPC)의 컨소시엄 공모는 이달 말까지다. 정부는 국가 AI 컴퓨팅 센터가 설립되면 올해 구매한 GPU 분을 센터로 이관한 뒤 국내 산학연 기관의 AI 관련 연구와 국가대표 AI 개발사로 뽑힌 '월드 베스트 LLM(거대언어모델)' 기업에 우선 사용권을 줄 방침이다.과기정통부가 지난달 대기업을 제외한 산학연 기관 405곳을 대상으로 GPU 수요 조사를 실시한 결과 GPU 자원이 6개월 이내 필요하다고 응답한 곳이 45.9%로 가장 많았다. 조사 대상 5곳 중 4곳이 1년 이내 필요하다고 답했다.
+            </p>
+            <p>
+                카카오엔터테인먼트는 업계 최초의 불법유통대응팀 P.CoK이 지난 9일 영어권 대형 불법사이트 '리퍼스캔스'를 폐쇄했다고 14일 밝혔다. 리퍼스캔스는 지난 2019년부터 6년간 한국 대표 인기 웹툰과 웹소설을 다수 불법유통해온 웹사이트다. 전문 불법 번역 그룹을 운영하는 곳으로도 알려졌다.
+            </p>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><img src="ch04/logo.png" alt="고용노동부 로고"</li>
+                <li><img src="ch04/address.png" alt="주소"</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

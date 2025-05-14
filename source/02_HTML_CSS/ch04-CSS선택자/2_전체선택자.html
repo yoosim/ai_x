@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{/*전체선택자==페이지 전체 태그 : 페이지 초기화 용도로 사용*/
+          margin:0;/*밖여백 (위,우,하,좌)*/
+          padding:0;/*안여백 (위,우,하,좌)*/
+          color:saddlebrown; /*글자색*/
+        }
+        header, nav, section, footer{
+            width:500px; /*가로사이즈(width를 지정하지 않으면 block형태그는 부모 width를 쓴다)*/
+            border:1px solid gray;
+            margin:1epx auto;
+        }
+        nav ul {/*수평으로 하고픈 태그의 부모*/
+         overflow:hidden;
+        }
+        nav ul li { /* 수평으로 할 태그*/
+         float:left;
+        }
+        section{ /*수평 속성을 지우고 싶은 태그*/
+                 clear:both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> ㅇㅇ 주식회사 </h1>
+    </header>
+    <nav>
+        <li>회사소개</li>
+        <li>서브스 소개</li>
+        <li>고객센터</li>
+        <li>공지사항</li>
+    </nav>
+    <section>
+        <p>
+            국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며,
+            국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다.
+            국회의원은 국회에서 직무상 행한 발언과 표결에 관하여 국회외에서 책임을 지지 아니한다.
+        </p>
+    </section>
+    <footer>
+        <p> 서울시 관악구 신림동 93 성지빌딩 301호</p>
+    </footer>
+</body>
+</html>

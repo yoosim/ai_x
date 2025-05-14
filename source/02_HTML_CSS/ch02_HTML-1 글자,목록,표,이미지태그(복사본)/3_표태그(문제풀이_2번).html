@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        caption {
+            background-color: lightyellow;
+        }
+        table {
+            background-color: #ff0000;
+        }
+        tr {
+            background-color: #ffd800;
+        }
+        tr:hover{background-color:lightgreen;}
+        td{
+           padding: 5px 2px 5px 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>table ex1</caption>
+        <tr>
+            <th> 국어 </th>
+            <th> 영어 </th>
+            <th> 수학 </th>
+        </tr>
+            <td> 100</td>
+            <td> 60 </td>
+            <td> 80 </td>
+    </table>
+    <table>
+        <caption> table ex2 </caption>
+        <tr>
+            <th> 국어 </th>
+            <th> 영어 </th>
+            <th> 수학 </th>
+        </tr>
+        <tr>
+            <td> 100</td>
+            <td> 60 </td>
+            <td> 80 </td>
+        </tr>
+        <tr>
+            <th colspan="2"> 평균</th>
+            <td> 80</td>
+        </tr>
+    </table>
+    <table>
+        <caption> table ex3 </caption>
+        <tr>
+            <th rowspan="3"> 중간고사 성적</th>
+            <th> 국어 </th>
+            <th> 영어 </th>
+            <th> 수학</th>
+        </tr>
+        <tr>
+            <td> 100 </td>
+            <td> 60</td>
+            <td> 80</td>
+        </tr>
+        <tr>
+            <th colspan="2"> 평균</th>
+            <td> 80</td>
+        </tr>
+    </table>
+</body>
+</html>
