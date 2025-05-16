@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{margin:0; padding:0;}
+        div{width:200px; height:200px; opacity:0.6; border:1px solid red; color:black; font-weight:bold;}
+        #div1{
+            position:absolute; /*절대좌표*/
+            /*position의 기본값은 static : 좌표없이 블록형으로 쌓음*/
+            top:0px; left:0px;
+            background-color:orangered;
+            z-index: 9; /*요소가 겹쳐질경우, z-index값이 큰 값이 위로 배치*/
+        }
+        #div2{background-color:cornflowerblue;
+              position:absolute;
+              top:100px; left:100px;
+              z-index:-9;
+        }
+        #div3{ /*부모가 포지션을 잡아서 div4도 따라감*/
+            position:absolute;
+            top:350px; left:350px;
+            width:300px; height:300px;
+            background-color:forestgreen;
+        }
+        #div4{
+            position:absolute;
+            top:50px; right:50px;
+            background-color:yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">
+    div3
+    <div id="div4" style="border:1px solid green;">idv4</div>
+    </div>
+</body>
+</html>

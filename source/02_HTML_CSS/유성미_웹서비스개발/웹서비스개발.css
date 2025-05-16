@@ -1,0 +1,104 @@
+﻿/*페이지 초기화*/
+*{margin:0; padding:0;
+}
+/*nav 부분*/
+
+li{list-style:none;}
+#nav{
+     width:900px;
+     height:80px;
+}
+#nav_left{
+    float:left;
+    padding: 10px 10px;
+
+
+}
+#nav_left li {width:90px;
+              display:inline;
+              padding:5px;
+}
+#nav_left ul li:first-child{
+    background-color:#fdeada;
+    border:1px solid gray;
+}
+#nav_right {
+    float: right;
+    padding: 10px 10px;
+    margin: 0 0 0 20px;
+}
+#nav_right li{
+        display:inline;
+         padding:5px;
+}
+#nav > p {
+    clear: both;
+}
+#my_page { font-size:1.2em;
+           border-bottom:1px solid gray;
+           padding-left:10px;
+           padding-bottom: 10px;
+}
+/*#content 부분*/
+#content {
+    overflow:hidden;
+    width:900px;
+    height:500px;
+}
+#content #title{
+    float:left;
+    width:30%;
+}
+#content #title #lnb{
+    padding-top:10px;
+    padding-left:10px;
+}
+#content #title #lnb ul li{
+    border:1px solid gray;
+    padding:8px;
+}
+#content #title #lnb ul li:nth-child(4){
+    background-color:#fdeada
+}
+#content #my_content{float:right;
+                      width:70%;
+                      margin:10px auto;
+}
+fieldset{
+    padding-right:20px;
+    height:400px;
+}
+}
+tr td {
+    margin:0 auto;
+    padding:10px;
+}
+#content #my_content #sub_title > a{
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+#content #my_content{
+    border:1px solid gray;
+    box-sizing:border-box;
+}
+#content #modify{
+    margin:0 auto;
+}
+#sub_title {
+    text-align: center;
+}
+#sub_title tr td {
+    margin:0 auto;
+}
+    /*footer 부분*/
+    #footer {
+    width: 900px;
+    text-align:center;
+    height:50px;
+    line-height:50px;
+    background-color: #fdeada;
+    border:1px solid gray;
+}
+/*#my_content a{
+    border-bottom:1px solid gray;
+}*/

@@ -1,0 +1,91 @@
+﻿/* css/header.css : 페이지 초기화, header부분*/
+/****페이지 초기화****/
+/*폰트 설정*/
+@font-face {
+    font-family: 'Freesentation-3Light';
+    src: url('../font/Freesentation-3Light.ttf'); /*..은 css파일 */
+}
+
+@font-face {
+    font-family: 'Paperlogy-4Regular';
+    src: url('../font/Paperlogy-4Regular.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Paperlogy-4Regular';
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: block; /*a태그를 block타입으로 하여 영역 확장*/
+}
+li {list-style: none;}
+
+/***header 부분***/
+/****header.gnb 부분****/
+header .gnb {
+    min-width:1000px; /*최소한의 가로행*/
+    background-color: black;
+    overflow: hidden
+}
+
+header .gnb ul {width: 1000px;  margin: 0 auto;}
+header .gnb ul li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 8%;
+    margin: 0 1%;
+    text-align: center;
+}
+header .gnb a {color: white;}
+/****header.logo 부분****/
+header .logo {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    padding: 15px 20px;
+    margin: 30px auto;
+    width: 100px;
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 2em;
+}
+/****header.hitmenu 부분 ****/
+header .hitmenu ul {
+    width: 1000px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+header .hitmenu ul li {
+  float: right;
+  border: 1px solid black;
+}
+header .hitmenu ul li a{ 
+  padding:10px 30px;   
+}
+header .hitmenu ul li:first-child{
+  border-radius: 0 10px 10px 0;
+}
+header .hitmenu ul li:last-child{
+  border-radius: 10px 0 0 10px;
+}
+/****header.lnb 부분****/
+header .lnb {
+  border-top: 1px dashed black;
+  min-width:1000px;
+  border-bottom: 1px dashed black;
+  margin: 15px auto;
+}
+header .lnb ul{
+  width:1000px; margin: 0 auto;
+  overflow:hidden;
+}
+header .lnb ul li{
+  float:left;
+  /* 메뉴 하나당 : 12.5% */
+  width:10.5%; margin:0 1%;
+  line-height:30px; /*height:30px;*/
+  text-align:center;
+}

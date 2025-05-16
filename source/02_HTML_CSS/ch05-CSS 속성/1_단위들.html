@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #wrap{
+            width:600px; margin:0 auto;
+            border:1px solid gray;
+            text-align:justify;
+            padding:10px;
+        }
+        #wrap p:nth-child(2n){background-color:lightblue;}
+        /* em(원 글씨크기의 몇배로 만드는지 /기본사이즈 16px), %(몇배 / 글씨크기 및 width,height 등에서 사용가능), px(픽셀), pt(글씨크기, 포인트 / 3pt가 4pt)
+           pxtoem(https://pxtoem.com.au/)
+           pxtopt(https://www.rdocumentation.org/packages/basictabler/versions/1.0.4/topics/PxToPt)
+        */
+        /*em 사용방법*/
+        #wrap p:nth-child(1){
+            font-size: .8em; /*원래 사이즈의 0.8배*/
+        }
+        /*span 태그는 인라인태그*/
+        #wrap p > span{
+            display:block; /* display 속성을 block으로 수정하면 block형 태그로 전환*/
+            color:gray;
+            font-size:.5em;
+        }
+        /* % 퍼센트 사용방법*/
+        #wrap p:nth-child(2){
+            font-size:100%; /*문자의 경우 원래 사이즈의 몇퍼센트*/
+            /*width, height, padding, margin ... 등의 길이의 경우 사용이 가능:부모 길이의 몇%인지 */
+        }
+        /*px 사용방법*/
+        #wrap p:nth-child(3){
+            font-size:32px;/*p태그의 기본 사이즈가 16px*/
+        }
+        /*pt 사용방법 : 글씨에서만 사용이 가능*/
+        #wrap p:nth-child(4){
+            font-size:24pt;/*3pt(글씨포인트 단위)가 4px*/
+        }
+    </style>
+</head>ㄴ
+<body>
+    <div id="wrap">
+        <p>
+            국무총리는 대통령을 보좌하며, 행정에 관하여 대통령의 명을 받아 행정각부를 통할한다.<br /> 국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다.
+            <span>입력20025.05.14. 오전 9:36</span>
+        </p>
+        <p>
+            국무총리는 대통령을 보좌하며, 행정에 관하여 대통령의 명을 받아 행정각부를 통할한다.<br /> 국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다.
+            <span>입력20025.05.14. 오전 9:36</span>
+        </p>
+        <p>
+            국무총리는 대통령을 보좌하며, 행정에 관하여 대통령의 명을 받아 행정각부를 통할한다.<br /> 국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다.
+            <span>입력20025.05.14. 오전 9:36</span>
+        </p>
+        <p>
+            국무총리는 대통령을 보좌하며, 행정에 관하여 대통령의 명을 받아 행정각부를 통할한다.<br /> 국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다.
+            <span>입력20025.05.14. 오전 9:36</span>
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #yellow {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            border: 1px solid gray;
+            background-color: lightyellow;
+            position: relative; /*부모에서 relative를 주면 아래 자식들이 부모의 사이즈를 벗어나지 않음*/
+            top: 50px;
+        }
+        #yellow > div{
+            border:1px solid gray;
+            width:100px;
+            height:100px;
+            border:1px solid gray;
+        }
+        #green{
+            background-color:lightgreen;
+            position:absolute;
+            top:50px;left:50px;
+        }
+        #red{
+            background-color:red;
+            position:absolute;
+            top:40px; right:80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="yellow">
+        yellow
+        <div id="green">green</div>
+        <div id="red">red</div>
+    </div>
+</body>
+</html>

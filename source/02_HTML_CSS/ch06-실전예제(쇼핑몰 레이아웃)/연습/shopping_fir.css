@@ -1,0 +1,17 @@
+﻿/* 초기화*/
+*{margin:5px; padding:5px;}
+/*header부분*/
+#container{
+    border:1px solid gray;
+}
+#header{
+    overflow:hidden;
+
+}
+#header.gnb{
+    border:1px solid gray;
+    height:30px;
+    background-color:black;
+    display:block;
+
+}

@@ -1,0 +1,21 @@
+﻿/*전체 페이지 조정*/
+*{ padding:10px; margin:0;}
+#header{
+    border:1px solid gray;
+    /*background-color:black;*/
+}
+#header .gnb{
+    overflow:hidden;
+}
+#header .gnb ul{
+    float:left;
+    display:inline-block;
+}
+#header .gnb ul li{
+    /*color:white;*/
+    text-decoration:none;
+    text-align:center;
+}
+ .logo{
+    border:1px solid gray;
+}

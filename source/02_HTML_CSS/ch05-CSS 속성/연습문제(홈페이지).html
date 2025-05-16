@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="quiz.css" rel="stylesheet"/>
+    <style>
+        #div {
+            position: relative;
+            top: 50px;
+        }
+        #container {
+            background: url('ch05/sulhyun.jpg')no-repeat;
+            background-size: 107%;
+            opacity: 0.4;
+            position:fixed;
+            top:100px; left:100px;
+            z-index:-9;
+        }
+        #container {
+            width: 650px;
+            height: 500px;
+            border: 1px solid gray;
+            text-align: center;
+        }
+        #header{
+            height:100px;
+            border:1px solid gray;
+            text-align:center;
+            background-color:yellow;
+            margin:5px;
+        }
+        #header p{
+            padding:40px;
+        }
+        #nav {
+            height: 100px;
+            margin: 5px;
+            border:1px solid gray;
+        }
+        #nav p{
+            padding:10px;
+        }
+        #nav ul{overflow:hidden;
+               display: inline-block;
+               color:mediumvioletred;
+        }
+
+        #nav ul li{
+            width:100px;
+            list-style:none;
+            padding:5px;
+            text-align:center;
+            background-color:lightpink;
+            font-weight:bold;
+            float:left;
+            box-sizing:border-box;
+            margin: 2px;
+        }
+        #nav ul li:first-child{
+            border-radius: 20px 0 0 20px;
+        }
+        #nav ul li:last-child{
+            border-radius:0 20px 20px 0;
+        }
+        #section{
+            overflow:hidden
+        }
+        #section #content{
+            width:60%; height:200px;
+            border:1px solid gray;
+            float:left;
+            margin:5px;
+            padding:8px;
+            box-sizing:border-box;
+
+        }
+        #section #banner{
+            width:36.5%; height:200px;
+            border:1px solid gray;
+            float:right;
+            margin:5px;
+            padding:8px;
+             box-sizing:border-box;
+        }
+        #footer {
+            height: 40px;
+            border: 1px solid gray;
+            text-align: center;
+            background-color: yellow;
+            margin: 5px;
+            padding-top:10px;           
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <p>HEADER</p>
+        </div>
+        <div id="nav">
+            <p>NAVIGATION</p>
+            <ul>
+                <li dir="menu">menu1</li><li>menu2</li><li>menu3</li><li>menu4</li><li>menu5</li>
+            </ul>
+        </div>
+        <div id="section">
+            <div id="content">
+                <p>CONTENT</p>
+            </div>
+            <div id="banner">
+                <p>BANNER</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>FOOTER</p>
+        </div>
+    </div>
+</body>
+</html>

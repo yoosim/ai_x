@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{width:100px; height:100px; border:1px solid black;
+            font-weight:bold; text-align:center;
+        }
+        /*display 속성에 올 수 있는것들
+            block / inline / inline-block / none */
+        div:nth-child(1){display:block;background-color:indianred;}
+        div:nth-child(2){background-color:mediumseagreen; margin:30px;}
+        div:nth-child(3){display:none;} /* none은 해당 속성이 사라지게 표출이 됨 (안보이고 공간도 삭제) */
+        div:nth-child(4){background-color:cornflowerblue;}
+        div:nth-child(5){display:inline; margin:10px;} /* display inline은 옆라인만 마진이 잡히고 위아래는 없음(무시) / span으로 보면됨*/
+        div:nth-child(6){display:inline-block; background-color:palevioletred;} /*크기가 그대로 유지되어 */
+        div:nth-child(7){display:inline-block; background-color:lightcoral;} /*크기가 그대로 유지되어 */
+    </style>
+</head>
+<body>
+    <div>div1</div><div>div2</div><div>div3</div><div>div4</div><div>div5</div><div>div6</div><div>div7</div><div>div8</div>
+</body>
+</html>

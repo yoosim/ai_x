@@ -17,6 +17,11 @@
             return true;
         }
     </script>
+    <style>
+        #header{
+            text-align:center;
+        }
+    </style>
 </head>
 <body>
     <div id="header">
@@ -59,7 +64,8 @@
                     </tr>
                     <tr>
                         <td><label fot="tel">전화<b>*</b></label></td>
-                        <td><input type="tel" id="tel" name="tel"
+                        <td><input type="text" id="tel" name="tel"
+                                   placeholder="xx-xxx-xxxx-/000-0000-0000"
                                    pattern="\d{2,3}-\d{3,4}-\d{4}"
                                    title="xx-xxx-xxxx 또는 000-0000-0000형식의 전화번호 형식으로 작성해주세요"
                                    required="required"/></td>
@@ -74,14 +80,16 @@
                     </tr>
                 </table>
             </fieldset>
-            <fieldsat>
+            <fieldset>
                 <legend>추가 입력사항</legend>
                 <table>
                     <tr>
-                        <td>결혼<label for="marrid">유</label>
-                        <label for="single">무</label></td>
                         <td>
-                            <input type="radio" name="web" value="y" id="married" checked="checked" />
+                            결혼<label for="marrid">유</label>
+                            <label for="single">무</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="web" value="y" id="marrid" checked="checked" />
                             <label for="married">기혼</label>
                             <input type="radio" name="web" value="n" id="single" />
                             <label for="single">미혼</label>
@@ -110,13 +118,18 @@
                         </td>
                     </tr>
                 </table>
-</fieldsat>
+            </fieldset>
             <p>
                 <input type="submit" value="가입" />
                 <input type="reset" value="취소" />
             </p>
         </form>
     </div>
-
+    <footer>
+        <p>
+            서울시 마포구 망원동 성지빌딩 3층<br />
+            Copyright ⓒ XX ALL rights reserved
+        </p>
+    </footer>
 </body>
 </html>
