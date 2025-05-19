@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body{background-color:darkorange;}
+        div{background-color:cornflowerblue;
+            display:none;/*공간도 내용도 화면에서 사라짐 / 반대 비지블*/
+        }
+        #toggle:checked ~ div{display:block;}
+        #toggle{display:none;}
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle" />
+    <p>
+        어쩌고 저쩌고 
+    </p>
+    <label for="toggle">
+        <img src="img/menu.png" />
+    </label>
+    <p>어쩌고 저쩌고 중간에 내용생김</p>
+    <div>토글부분(메뉴가 나타났다 사라졌다 하는 부분)</div>
+</body>
+</html>

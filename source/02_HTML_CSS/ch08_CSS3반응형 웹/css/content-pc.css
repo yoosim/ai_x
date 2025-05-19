@@ -1,0 +1,7 @@
+/*content(PC 스크린용)*/
+#wrap .content{
+    background-color: darkolivegreen;
+    color: azure;
+    padding: 30px;
+    text-align: justify;
+}

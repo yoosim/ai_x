@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+        @import url('css/title.css');
+        @import url('css/footer.css');
+        @media screen { /*min-width는 브라우져 min-device는 모바일  */
+            #wrap .content{
+            background-color: darkolivegreen;
+            color: azure;
+            padding: 30px;
+            text-align: justify;}}
+        @media print{
+            #wrap .content{
+            color: darkolivegreen;
+            padding: 10px;
+            font-size: 1.5em;}}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="title"><h1>NOTICE</h1>
+            <hr>
+            <div class="content">
+                <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</P>
+            </div>
+            </hr>
+            <div class="footer">
+                <p>2025.05.19<br>written by Hong Gil-Dong</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

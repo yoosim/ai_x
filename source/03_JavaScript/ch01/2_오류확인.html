@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <script>
+        al_pha = 20; //변수 선언
+        alert(1); //submit이 이루어진 이후라서 F12를 눌러도 에러가 지나가서 에러를 볼 수 없는 경우 하나하나씩 다 체크(alertㄴ) 
+        alert('al_pha 값은' + al-ha); //고의적인 error - [F12] console탭 확인 /변수에는 _(언더바)또는 $(달러)표시
+        alert(2);
+        al_pha = 'hello';
+        alert(3);
+        alert('al_pha 값은' + al_pha ); //9번~11번 오류로 무시 하고 16으로 넘어감
+        alert(4);
+    </script>
+</head>
+<body>
+    <script>
+        document.write('윗 스크립트에서 선언된 변수 al_pha값은' + al_pha + '입니다.');
+    </script>
+</body>
+</html>
