@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <style>
+        
+    </style>
+    <script>
+        let scoreStr = prompt('점수를 입력하세요.', '기본값'); //취소:null 확인:입력된 값(문자)-문자로 입력받음
+        //document.write('scorreStr :', scoreStr + '타입 :' + typeof(scoreStr));
+        if(scoreStr!=null){ //if (!scoreStr)로 써도 됨. null은 false로 간주. 
+            //string을 number로 형변환 1. Number() : 형변환불가일 경우 NaN/ ''나 ' '일 경우 0
+            let score = Number(scoreStr); //string을 number로 형변환 / a를 입력할 경우 형변환이 불가. (NaN 값이들어감)
+            // document.write('score=' +score + '<br1> 타입 :' + typeof(score));
+            // string을 number로 형변환 2. parseInt() : 형변환불가일 경우 NaN / ''나 ' '일 경우 NaN, 10점->
+            score = parseInt(scoreStr);
+            // document.write('score =' +score + '<br> 타입 :' + typeof(score));
+            if (isNaN(score)) { //score가 NaN인지 여부
+                alert('점수를 입력하라고요ㅓㅓ');
+            }else{
+                // if(score>=90){
+                //     result = '참 잘했어요';
+                // }else{
+                //     result = '분발하세요';
+                // }
+                result = (score>=90) ? '참 잘했어요' :'분발하세요' //조건이 만족되는지 
+                document.write(result);
+            }
+        }else{
+            alert('점수를 입력하시오.');
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

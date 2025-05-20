@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title></title>
+  <style>
+    
+  </style>
+  <script>
+    var su = parseInt(prompt('정수를 입력하세요', '0'));
+    switch(su%2){
+      case 0 : document.write('짝수'); break; //break를 안 넣으면 모두 다 출력함으로 (짝수홀수수를 입력하세요.)나옴 
+      case 1 :
+      case -1: document.write('홀수'); break;
+      default: document.write('수를 입력하세요.');
+    }
+    // if(su%2==0){ // su를 2로 나눈 값이 0이 라면 
+    //   document.write('짝수');    // 짝수
+    // }else if(su%2==1 || su%2==-1){ //su를 2로 나누 값이0이 아니라면 1이거나 -1이면 홀수 
+    //   document.write('홀수');
+    // }else{  //스페이스이거나 문자(ㅁ,a,- 등) 입력했을 때 
+    //   document.write('수를 입력하세요.');
+    // }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

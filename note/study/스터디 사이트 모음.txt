@@ -1,0 +1,18 @@
+사이트 모음.
+1.파이썬 라이브러리
+https://docs.python.org/3/library/index.html
+https://pypi.org/
+
+2.범례 사이트 
+https://stackoverflow.com/questions/30490740/move-legend-outside-figure-in-seaborn-tsplot
+
+3.시리즈에 문자함수 쓰기 위한 참조 사이트 
+https://pandas.pydata.org/docs/reference/series.html
+
+4.
+
+5.C언어 코드 설명서
+https://www.w3schools.com/jsref
+
+6.자바스크립트 도큐먼트
+http://devdocs.io/javascript

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title></title>
+  <script>
+    // let kor = parseInt(kor_test);
+    let kor, eng;
+
+    do{ 
+      let kor_test = prompt('국어 점수를 입력하세요');
+      kor = parseInt(kor_test);
+    }while(isNaN(kor) || kor<0 || kor>100);
+    
+    do{
+      let eng_test = prompt('영어 점수를 입력하세요');
+      eng = parseInt(eng_test);
+    }while(isNaN(eng) || eng<0 || eng>100);
+document.write('국어 점수 :', kor ,'<br>');
+document.write('영어 점수 :', eng , '<br>');
+document.write('평균 점수 :'+ (kor+eng)/2);
+    //   (isNaN(kor) || kor<0 || kor>100);
+    // document.write('국어 점수 :', kor_test);
+  //   do{
+  //     kor_test = prompt('국어 점수를 입력하세요')
+  //   }while(isNaN(kor)|| kor<0 || kor>100);
+  // document.write('국어 점수 :', kor)
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

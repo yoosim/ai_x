@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title></title>
+  <style>
+    img {width: 300px;}
+  </style>
+  <script>
+    const hour = new Date().getHours(); //시간만 가져오기 0~22
+    //0~6시 새벽그림 7~17시 낮그림 18~23 밤그림
+    if(hour <= 6){
+      document.write('<h1>조용한 새벽입니다.</h1>')
+      document.write('<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREn9DzSpAWaubKLX9sTzw-c0qhN84OxY539Q&s">')
+    }else if(7<=hour && hour<=17){
+      document.write('<h1>활기찬 낮입니다.</h1>')
+      document.write('<img src="https://img.hankyung.com/photo/202204/PYH2022041911080001300_P4.jpg">')
+    }else{
+      document.write('<h1>밤입니다.</h1>')
+      document.write('<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/839938e7-9518-4d99-960e-1bcbf1b3b7ee.jpeg">')
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
