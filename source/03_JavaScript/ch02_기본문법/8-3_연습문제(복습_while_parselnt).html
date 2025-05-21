@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+
+    <script>
+           // 사용자로부터 prompt를 이용해서 국어와 영어점수(0~100)를 입력받아 국어, 영어, 평균출력
+    // 유효하지 않는 점수를 입력할 경우 다시 입력받음
+    // do~while, prompt(), Number(), parseInt(), trim():문자의양쪽space제외(strip함수), 
+    // document.write() 이용하여 출력
+    let kor, eng;
+    // while(조건식){
+    //     조건이 참일때 계속 실행할 명령문들;
+    // }
+    while(true){
+        kor=parseInt(prompt('국어 점수를 입력하세요'));
+        if(!isNaN(kor) && kor>=0 && kor<=100){
+            break;
+        }
+    };
+    while(true){
+        eng=parseInt(prompt('영어 점수를 입력하세요'));
+        if(!isNaN(eng) && eng>=0 && eng<=100){
+            break;
+        }
+    }
+    document.write('<table border="1">')
+    document.write('<tr><td>국어 점수 : </td><td>  ' + kor + '</td></tr>' );
+    document.write('<tr><td>영어 점수 : </td><td>  ' + eng + '</td></tr>' );
+    document.write('<tr><td>' + '평균 점수 :</td><td> ' + (kor+eng)/2 + '</td></tr>');
+    document.write('</table>')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

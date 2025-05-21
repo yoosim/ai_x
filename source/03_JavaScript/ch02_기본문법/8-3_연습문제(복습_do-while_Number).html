@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <script>
+        // do while number사용
+        let kor, eng;
+        do{
+            kor_test = prompt('국어 점수를 입력하세요');
+            kor = Number(kor_test);
+            }while(kor_test.trim() ==='' || isNaN(kor) || kor<0 || kor>100);
+        do{
+            eng_test = prompt('영어 점수를 입력하세요');
+            eng = Number(eng_test);
+        }while(eng_test.trim() === '' || isNaN(eng) || eng<0 || eng>100); //이 조건중 하나라도 참이면 잘못된 값 
+            //빈 스트링이거나 || 숫자가 이거나 || 0보다 작거나 || 100보다 크면 안되는 조건
+
+        document.write('국어 점수 : ' + kor + '<br>');
+        document.write('영어 점수 : ' + eng + '<br>');
+        document.write('평균 점수 : ' + (kor+eng)/2 );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

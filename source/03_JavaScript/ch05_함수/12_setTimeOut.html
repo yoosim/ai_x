@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <script>
+        //내장함수
+        //일정시간 후 함수를 한번 실행
+        // setTimeout (function(){}, 3000)
+        let id = setTimeout ( ( )=> { //중지시키기 위해 setTimeout함수를 id에 할당
+            alert('3초 지났어요.');
+        }, 3000); //3초후에 실행되게 3000 넣음
+        var cnt = 0; //while문 수행횟수를 cnt에 저장
+        let nowTime = new Date().getTime(); //현재의 밀리세컨
+        while(
+            new Date().getTime() < nowTime + 2000){
+                cnt++;
+            }
+            document.write('2초 동안 ' + cnt + '번 while문 반복 수행');
+            //setTimeout 중지
+            clearTimeout(id);
+            document.write(' ~ 타이머 중지!');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

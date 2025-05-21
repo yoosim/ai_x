@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <script>
+         // while(조건식){
+    //     조건이 참일때 계속 실행할 명령문들;
+    // }
+        let kor,eng;
+
+        while(true){
+            kor_test = prompt('국어 점수를 입력하세요.')
+            kor = Number(kor_test);
+            if(kor_test.trim()!=='' && !isNaN(kor) && kor>=0 && kor<=100){
+                //입력받은 값이 빈스트링이 아니거나(값을 입력받았거나), 문자가 아니거나(숫자이거나) , 0보다 크거나 같고, 100보다 작거나 같으면 멈춰라
+                break; 
+            }
+        }
+        while(true){
+            eng_test = prompt('영어 점수를 입력하세요');
+            eng = Number(eng_test);
+            if(eng_test.trim()!=='' && !isNaN(eng) && eng>=0 && eng<=100){
+                break;
+            };
+        }
+        document.write('국어 점수 :' + kor + '<br>');
+        document.write('영어 점수 :' + eng + '<br>');
+        document.write('평균 점수 :' + (kor+eng)/2 );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
