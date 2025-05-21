@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title></title>
+  <style>
+    table{margin: 0 auto;}
+    td{text-align: right;}
+  </style>
+  <script>
+    // prompt함수를 이용하여 원하는 구구단을 입력받아 해당 구구단을 출력
+    // 해당 구구단 (2단~9단)을 입력
+    // 입력 받은게 숫자인지 문자인지 체크하고 2<= i <=9 범위인지 체크
+    // 
+    let guu;
+    do{
+      let gugudan = prompt('구구단을 입력하세요');
+      guu = parseInt(gugudan);
+        if(isNaN(guu)){
+          alert('숫자를 입력하세요');
+        }else if(guu <2 || guu > 9){
+          alert('2~9사이의 숫자를 입력해주세요')
+        }
+    }while(isNaN(guu) || guu <2 || guu > 9);
+    document.writeln('<table>');
+    for(i=1 ; i<=9; i++){
+      document.write('<tr><td>'+ guu + 'x' + i + ' = </td>' + '<td>' + guu*i + '</td></tr>');
+    }
+    document.write('</table>');
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
