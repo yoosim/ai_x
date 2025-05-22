@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <script>
+        let students = [{name:'홍', kor:99, mat:90, eng:99, sci:99},
+                        {name:'김', kor:60, mat:70, eng:80, sci:85}];
+        students.push({name:'이', kor:90, mat:90, eng:80, sci:70}); //맨 마지막에 추가, append개념 
+        for (var idx in students){
+            students[idx].getSum = function(){
+                return this.kor +this.mat + this.eng + this.sci;
+            };
+            students[idx].getAvg = function(){
+                return this.getSum()/4;
+            };
+            students[idx].toString = function(){
+                let output = ''; //toString함수가 reteurn할 함수 
+                for(let key in this){
+                    if(key!='toString' && key!='getSum' && key!='getAvg'){ //3가지 조건이 아니면
+                        output += key+ ':' + this[key] + '';
+                    }else if(key =='getSum'){ //getSum이면
+                        output += key.substring(3) + ':' + this[key]() + ' '; //substring(3)은 3번째 숫자부터 끝까지 , this[key]옆에 괄호()를 써서 실행값을 나타내야 함.
+                    }else if(key =='getAvg'){ 
+                        output += key.substring(3) + ':' +this[key]() + '\n';
+                    } //if문 닫기
+                } // toStirng의 for문 닫기
+                return output;
+            }; //toString 닫기
+        } // 전체for문 닫기 
+        var out = ''; //alert함수에 출력할 문자를 담을 변수
+        for (let idx=0; idx<students.length; idx++){
+            out += students[idx]; //문자와 객체 합치기
+        }
+        alert(out);
+        document.write(out.replaceAll('\n', '<br>'));
+        // document.write(out); // 여기에는 \n이 안 먹어서 위에처럼 해야 함.
+        document.write('<h3> for-in문 </h3>');
+        for (let idx in students){
+            document.write(idx + '. ' + students[idx]  + '<br>');
+        }
+        document.write('<h3> for-of문 </h3>');
+        for (let student of students){
+            document.write(student  + '<br>');
+        }
+        document.write('<h3> for.Each -1 </h3>');
+        students.forEach((data,idx)=>{
+            document.write(idx + '.' + data + '<br>')
+        })
+        document.write('<h3> for.Each -2 </h3>');
+        students.forEach(data=> document.write( data + '<br>'));
+        //객체안에 화살표 함수 사용 불가.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

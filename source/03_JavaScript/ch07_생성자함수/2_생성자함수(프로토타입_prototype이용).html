@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <script>
+        //생성자 함수
+        function Student (name, kor, mat, eng, sci){
+            this.name = name;
+            this.kor = kor;
+            this.mat = mat;
+            this.eng = eng;
+            this.sci = sci;
+        } //function Student 닫기 
+        //Student 타입의 함수를 prototype에 추가
+        Student.prototype.getSum = function(){
+            return this.kor +this.mat + this.eng + this.sci;
+        };
+        Student.prototype.getAvg = function(){
+            return this.getSum()/4;
+        };
+        Student.prototype.toString = function(){
+            let output = ''; //toString함수가 reteurn할 함수 
+                for(let key in this){
+                    if(key!='toString' && key!='getSum' && key!='getAvg'){ //3가지 조건이 아니면
+                        output += key+ ':' + this[key] + ' ';
+                    }else if(key =='getSum'){ //getSum이면
+                        output += key.substring(3) + ':' + this[key]() + ' '; //substring(3)은 3번째 숫자부터 끝까지 , this[key]옆에 괄호()를 써서 실행값을 나타내야 함.
+                    }else if(key =='getAvg'){ 
+                        output += key.substring(3) + ':' +this[key]() + '\n';
+                    } //if문 닫기
+                } // toStirng의 for문 닫기
+                return output;
+        };
+        Students =  [];
+        Students.push(new Student('홍',90,40,60,80));
+        Students.push(new Student('창',80,60,67,89));
+        Students.push(new Student('김',90,20,65,92));
+        Students.forEach((data, idx)=> document.write(idx + '.' + data + '<br>'));
+        s = new Student('신', 100,40,60,90);
+        document.write(s.getSum());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

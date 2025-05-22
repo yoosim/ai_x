@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <script>
+        //객체생성함수 (생성된 객체를 return하는 함수)
+        function makeStudent(name, kor, mat, eng, sci){
+            let resultObj = {
+                name:name, 
+                kor:kor, 
+                mat:mat, 
+                eng:eng, 
+                sci:sci,
+                getSum : function(){
+                    return this.kor +this.mat + this.eng + this.sci
+                },//getSum 닫기
+                getAvg : function(){
+                    return this.getSum()/4;
+                },//getAvg 닫기
+                toString : function(){
+                    let output = ''; //toString함수가 reteurn할 함수 
+                    for(let key in this){
+                        if(key!='toString' && key!='getSum' && key!='getAvg'){ //3가지 조건이 아니면
+                            output += key+ ':' + this[key] + ' ';
+                        }else if(key =='getSum'){ //getSum이면
+                            output += key.substring(3) + ':' + this[key]() + ' '; //substring(3)은 3번째 숫자부터 끝까지 , this[key]옆에 괄호()를 써서 실행값을 나타내야 함.
+                        }else if(key =='getAvg'){ 
+                            output += key.substring(3) + ':' +this[key]() + '\n';
+                        } //if문 닫기
+                    } // toStirng의 for문 닫기
+                    return output;},
+                }; //resultObj 닫기 
+            return resultObj;
+        }// function makeStudent 닫기
+        st = makeStudent('홍',90,70,80,99);
+
+
+        students = [makeStudent('홍',90,20,80,95),
+                    makeStudent('유',80,67,21,92),
+                    makeStudent('신',62,50,40,15)];
+        students.forEach((data, idx) => document.write(idx + ' .' + data + '<br>'));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

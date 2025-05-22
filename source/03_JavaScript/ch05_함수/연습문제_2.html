@@ -5,24 +5,44 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <title></title>
     <style>
-        
+        body{
+            background-image:url('ch05_img/img01.png');
+            background-repeat: no-repeat;
+            background-size: :100px;
+        }
     </style>
     <script>
+        var id = setInterval(()=>{
+                document.write(new Date()+ '<br>');
+            }//id 닫기       
+        cnt = 0; //시간이 지남에 따라 누적된 횟수가 담길 함수
+        let sec = new Date().getTime(); //현재의 밀리세컨
+        while(
+            new Date().getTime() < sec +1000 ){
+                cnt++;
+            }
+
+        
+
+        // sec = new Date().getDay(); 
+        // switch(sec){
+        //     case 0 : document.body.style = 'background-image: url(ch05_img/img01.png)'
+        // }
         /* 
         1초마다 백그라운드 이미지랑 폰트컬러도 변경해야 함. 
         docu.body.inner에 시간 넣어서 시간이 한줄에 나오게...
         */
-        let id = setTimeout( ()=>{},1000);
-        cnt = 0; //누적 시간 저장용 변수
-        let nowTime = new Date().getTime();
-        while(
-            new Date().getTime() < nowTime +10000){
-                cnt++
-            }
-            document.body.innerHTML(nowTime);
+        // let id = setTimeout( ()=>{},1000);
+        // cnt = 0; //누적 시간 저장용 변수
+        // let nowTime = new Date().getTime();
+        // while(
+        //     new Date().getTime() < nowTime +10000){
+        //         cnt++
+        //     }
+        //     document.body.innerHTML(nowTime);
     </script>
 </head>
 <body>
-    
+
 </body>
 </html>
