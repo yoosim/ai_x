@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title></title>
+	<style>
+		table{width:280px; height:100px; margin: 0 auto}; h3{text-align: center;}
+	</style>
+	<script>
+
+		let color = ['red','orange','yellow','green','blue','navy','violet','white'];
+		for(let ldx=0; ixd<cul.length; idx++ ){
+			td[idx].style.backgroundColor = color[idx];
+		};
+		// window.onload= ()=>{
+		// 	var tds = 엘리먼트들 가져오기;
+		// 	for문을 이용하여 tds의 background-color를 바꾸기
+		// };
+		// let bgColorChange;
+		// let color = ['red','orange','yellow','green','blue','navy','violet'];
+		/*테이블 / 마우스on , 
+		색상은 포문으로 넣기, 문서객체 가져와서 for문 돌리기
+		*/
+	//quiz2.로케이션 url
+
+	</script>
+</head>
+<body>
+	<h3>quiz1:마우스를 올리면 바탕화면도 해당 색상으로</h3>
+	<table>
+		<tr onmouseover="bgColorChange(7)"> <!--tr에 마우스를 빼면 바탕화면이 하얀색-->
+			<td class="cul" onmouseover="bgColorChange(0)"></td>
+			<td class="cul" onmouseover="bgColorChange(1)"></td>
+			<td class="cul" onmouseover="bgColorChange(2)"></td>
+			<td class="cul" onmouseover="bgColorChange(3)"></td>
+			<td class="cul" onmouseover="bgColorChange(4)"></td>
+			<td class="cul" onmouseover="bgColorChange(5)"></td>
+			<td class="cul" onmouseover="bgColorChange(6)"></td>
+		</tr>
+	</table>
+</body>
+</html>

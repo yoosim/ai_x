@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <title></title>
     <style>
-        body{
+        /* body{
             background-image:url('ch05_img/img01.png');
             background-repeat: no-repeat;
             background-size: :100px;
-        }
+        } */
     </style>
     <script>
         var id = setInterval(()=>{
                 document.write(new Date()+ '<br>');
             }//id 닫기       
-        cnt = 0; //시간이 지남에 따라 누적된 횟수가 담길 함수
+        let cnt = 0; //시간이 지남에 따라 누적된 횟수가 담길 함수
         let sec = new Date().getTime(); //현재의 밀리세컨
         while(
             new Date().getTime() < sec +1000 ){

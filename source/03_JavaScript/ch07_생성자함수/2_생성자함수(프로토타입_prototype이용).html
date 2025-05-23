@@ -26,9 +26,9 @@
                     if(key!='toString' && key!='getSum' && key!='getAvg'){ //3가지 조건이 아니면
                         output += key+ ':' + this[key] + ' ';
                     }else if(key =='getSum'){ //getSum이면
-                        output += key.substring(3) + ':' + this[key]() + ' '; //substring(3)은 3번째 숫자부터 끝까지 , this[key]옆에 괄호()를 써서 실행값을 나타내야 함.
+                        output += key.substring(3) + ':' + this[key] + ' '; //substring(3)은 3번째 숫자부터 끝까지 , this[key]옆에 괄호()를 써서 실행값을 나타내야 함.
                     }else if(key =='getAvg'){ 
-                        output += key.substring(3) + ':' +this[key]() + '\n';
+                        output += key.substring(3) + ':' +this[key] + '\n';
                     } //if문 닫기
                 } // toStirng의 for문 닫기
                 return output;
