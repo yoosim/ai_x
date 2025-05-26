@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title></title>
+	<style>
+		table{width: 500px;
+			margin: 10px auto;
+			background-color: darkgreen;}
+			td{
+				background-color: white; padding: 50px; text-align: center;}
+	</style>
+	<script>
+		let tds;
+		window.onkeyup =()=>{
+			let tds = document.querySelectorAll('td'); //td들의 배열..?
+			let key = event.keyCode; //키 이벤트
+			if(48<=key && key <=56){
+				for(let i=0; i<tds.length ; i++){
+					tds[i].style.backgroundColor ='white';
+				}
+				tds[key - 48].style.backgroundColor ='yellow';
+			}else if(96<=key && key <= 105){
+				for(i=0; i<tds.length; i++){
+					tds[i].style.backgroundColor = 'white';
+				}
+				tds[key-96].style.backgroundColor = 'red';
+			}; //if문 닫기 
+	};//window 닫기
+
+
+		// 숫자키 다 하얗게 하고 선택한 값만 색상 변화게 
+		// td가져오기
+		// keyup 
+	</script>
+</head>
+<body>
+	<table>
+		<tr><td>0</td><td>1</td><td>2</td></tr>
+		<tr><td>3</td><td>4</td><td>5</td></tr>
+		<tr><td>6</td><td>7</td><td>8</td></tr>
+	</table>
+	
+</body>
+</html>

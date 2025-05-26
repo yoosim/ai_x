@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title></title>
+	<style>
+		div{width:300px; margin:0 auto; border:1px solid blue; text-align:center;}
+	</style>
+	<script>
+		window.onload = ()=>{
+			const url = [
+								'http://www.naver.com',
+                'http://www.daum.net',
+                'http://www.google.com',
+                'http://www.youtube.com' ];
+		let button = document.getElementsByTagName('button');
+		// var page = document.getElementsByTagName('button')[n];
+		for(let i=0; i<button.length; i++){
+			button[i].addEventListener('click',function(){
+				// event.preventDefault();
+				location.href = url[i];
+			});
+		};
+		};
+	</script>
+</head>
+<body>
+		<div>
+			<h3>quiz 4.메뉴</h3>
+			<p>
+				<button id="naver">네이버</button>
+				<button id="daum">다음</button>
+				<button id="google">구글</button>
+				<button id="youtube">유튜브</button>
+			</p>
+		</div>
+</body>
+</html>
