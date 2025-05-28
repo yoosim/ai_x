@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title></title>
+	<style>
+		
+	</style>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		//jQuery 소스 사용 가능 , jQuuery소스는 ready()의 괄호안에 function 기능 작성 
+		$(document).ready(function(){
+			//jQuery 소스 : $(선택자).함수()
+			$('p#p1').click(function(){
+				//p#p1(혼합선택자)이 click 되었을 때 하고싶은 기능
+				$(this).html('<b>태그 내용이 html에 적용되어서 바뀜</b>'); //<b>태그 적용
+				// $(this).text('<b>태그 내용안에 text 삽입</b>'); <b태그> 안됨
+				$(this).css('background-color','red')
+								.css('color','yellow'); //여러줄로 쓰는게 보기 편함
+			}); //클릭 이벤트 함수
+		});
+		// $(function(){
+		// })
+	</script>
+</head>
+<body>
+	<p id="p1">click 하세요</p>
+</body>
+</html>

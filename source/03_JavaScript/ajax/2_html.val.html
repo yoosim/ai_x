@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title></title>
+	<style>
+		
+	</style>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/*$('선택자').함수(); 
+			val(내용):내용을 입력(내용이 바뀜), val():내용을 return(가져옴) / html(내용),html()
+			text(내용):태그안에 text내용이 입력, text():태그안의 text가 return
+			*/
+			$('p#msg').html('<h1>안녕하세요 즐거운 월요일이 아닌 화요일~~</h1>');
+			$('input[name="msg"]').val('안녕하세요 감사합니다 오늘도 즐거운 하루 보내세요');
+			$('input[name="msg"]').css('font-weight','bold');
+			//button을 클릭하면 input에 value를 p태그에 출력하게 (event)
+			$('button').click(()=>{
+				// let msg = $('p#msg').html();
+				let msg = $('input[name=msg]').val();
+				$('p#msg').text(msg);
+				// alert(msg);
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="msg"></p>
+	<p>메세지 : <input type="text" name="msg" class="msg"></p>
+	<button>msg 경고창</button>
+</body>
+</html>
