@@ -2,10 +2,15 @@
 
 /*SQL
     -DCL
-        사용자 계정 생성 CREATE USER,  권한부여 GRANT,  권한박탈 REVOKE, 사용자계정삭제 DROP USER
-        트랜젝션 명령어 (
-    -DDL : 테이블생성 CREATE TABLE  , 테이블구조변경 ALTER TABLE, 테이블 삭제 DROP TABLE / DDL은 취소 불가능 
-    -DML : INSERT, SELECT, UPDATE, DELETE    
+        사용자 계정 생성 CREATE USER,  권한부여 GRANT,  
+        권한박탈 REVOKE, 사용자계정삭제 DROP USER  트랜젝션 명령어 
+        
+    -DDL 
+        테이블생성 CREATE TABLE  , 테이블구조변경 ALTER TABLE, 
+        테이블 삭제 DROP TABLE   -----DDL은 취소 불가능 
+        
+    -DML 
+        INSERT, SELECT, UPDATE, DELETE    - DML은 취소 가능
 */
 
 ----------------------------------
@@ -87,4 +92,214 @@ CREATE TABLE EMP01(
     -- 서브쿼리를 이용한 INSERT 
         --EX. DEPT 테이블에서 10~30 부서의 내용을 DEPT01 테이블에 INSERT
         INSERT INTO DEPT01 SELECT * FROM DEPT WHERE DEPTNO<40;
+
+        
+        ------------------------
+        -- 연습문제 PDF 1page
+        ------------------------
+        
+        -- 1.SAM01테이블 만들기
+        DROP TABLE SAM01;
+        CREATE TABLE SAM01(
+            EMPNO NUMBER(4) PRIMARY KEY,
+            ENAME VARCHAR2(10),
+            JOB VARCHAR2(9),
+            SAL NUMBER(7,2)
+        );
+        -- 2. INSERT 정보입력
+        SELECT * FORM SAM01;
+        INSERT INTO SAM01 VALUES(1000, 'APPLE','POLICE',10000);
+        INSERT INTO SAM01 VALUES(1010, 'BANANA','NURSE',15000);
+        INSERT INTO SAM01 VALUES(1020,'ORANGE','DOCTOR',25000);
+        INSERT INTO SAM01(EMPNO,ENAME,SAL) VALUES(1030,'VERY',25000);
+        INSERT INTO SAM01(EMPNO,ENAME,SAL) VALUES(1040,'CAT',2000);
+        SELECT * FROM SAM01;
+        
+        --3. EMP에 저장된 사원중 10번 부서 소속 사원의 정보를 추가 하기 (서브커밋)
+            INSERT INTO SAM01  SELECT EMPNO, ENAME, JOB, SAL FROM EMP WHERE DEPTNO=10;
+            SELECT * FROM SAM01;
+            DESC SAM01;
+            COMMIT;
+            
+            @C:\ai_x\lecNote\04_DBMS\demo.sql;
+            
+--2.UPDATE 테이블명 SET 필드명1=값1[, 필드명2=값2, ... 필드명N=값N] [WHERE 조건];
+SELECT * FROM EMP01;
+DROP TABLE EMP01;
+CREATE TABLE EMP01
+        AS SELECT EMPNO, ENAME, SAL, DEPTNO FROM EMP; -- EMP 테이블의 일부(EMPNO,ENAME,SAL,DEPTNO)를 복사
+
+SELECT * FROM EMP01;
+        --EX. 부서 번호를 30으로 수정
+        UPDATE EMP01 SET DEPTNO=30;
+        SELECT * FROM EMP01;
+        ROLLBACK;
+        SELECT * FROM EMP01;
+        --EX. 모든 사원(EMP01)의 급여를 10% 인상
+        UPDATE EMP01 SET SAL = SAL*1.1;
+        SELECT * FROM EMP01;
+        ROLLBACK;
+        --EX. EMP01테이블에서 10번 부서의 직원은 30번 부서로 이동
+        UPDATE EMP01 SET DEPTNO=30 WHERE DEPTNO=10;
+        SELECT * FROM EMP01;
+DROP TABLE EMP01;
+CREATE TABLE EMP01 AS SELECT * FROM EMP;
+SELECT * FROM EMP01;
+ALTER SESSION SET NLS_DATE_FORMAT = 'YY/MM/DD'; --날짜 구조 변경 
+        --EX. 'SCOTT'의 부서번호를 30으로 변경, JOB은 'MANAGER'로 변경, SAL과 COMM을 500$ 인상, 
+                --입사일은 25/06/04로 변경, 상사를 'KING'으로 변경
+        UPDATE EMP01 
+            SET DEPTNO=30, 
+                    JOB='MANAGER', 
+                    SAL = SAL+500,
+                    COMM = NVL(COMM, 0)+500,
+                    --HIREDATE = TO_DATE('25/06/04','YY-MM-DD'),
+                    HIREDATE = SYSDATE, --SYSDATE는 오늘(25/06/04)을 뜻함
+                    MGR =  (SELECT EMPNO FROM EMP01 WHERE ENAME='KING') 
+                WHERE ENAME ='SCOTT' ;
+        SELECT * FROM EMP01 WHERE ENAME = 'SCOTT'; 
+        
+         --EX. 'DALLAS'에 근무하는 직원의 급여랑 상여를 100$ 인상 
+         UPDATE EMP01 
+             SET SAL = SAL+100, 
+                    COMM = NVL(COMM, 0) + 100
+            WHERE DEPTNO = (SELECT DEPTNO FROM DEPT WHERE LOC='DALLAS');        
+        SELECT * FROM EMP01;
+        
+        
+         --EX. EMP01에서 모든 사원의 급여와 입사일을 'KING'의 급여와 입사일로 수정
+         UPDATE EMP01 
+            SET SAL = (SELECT SAL FROM EMP01 WHERE ENAME='KING'),
+                    HIREDATE = (SELECT HIREDATE FROM EMP01 WHERE ENAME='KING');
+                    
+            SELECT * FROM EMP01;
+            ROLLBACK;
+            
+-- 3. DELETE FROM 테이블명 [WHERE 조건];
+DELETE FROM EMP01;
+ROLLBACK; -- INSERT , UPDATE, DELETE만 취소 가능 / 나머지는 불가
+SELECT * FROM EMP01;
+DELETE FROM DEPT; --EMP 테이블이 참조하고 잇어서 지워지지 않음. 지울려면 EMP테이블이 참조하고 있는것을 지운다음 가능 (CHILD)
+
+         --EX. EMP01에서 'FORD' 직원 퇴사
+         DELETE FROM EMP01 WHERE ENAME='FORD';
+         SELECT * FROM EMP01;
+         
+         --EX. EMP01에서 30번 부서 직원 삭제
+         DELETE FROM EMP01 WHERE DEPTNO=30;
+         SELECT * FROM EMP01;
+         
+         --EX. 부서명이 'RESEARCH' 부서인 직원을 삭제 (부서번호 20번, 서브쿼리)
+         DELETE FROM EMP01 WHERE DEPTNO = (SELECT DEPTNO FROM DEPT WHERE DNAME = 'RESEARCH');
+         SELECT * FROM EMP01;
+         ROLLBACK;
+         
+         -- SAM01 : JOB이 정해지지 않은 직원 삭제 (NULL)
+         SELECT * FROM SAM01;
+         DELETE FROM SAM01 WHERE JOB IS NULL;
+         
+         --SAM01 : 이름이 ORANGE 삭제
+         DELETE FROM SAM01 WHERE ENAME='ORANGE';
+         SELECT * FROM SAM01;
+         
+        
+        ------------------------
+        -- 연습문제 PDF 2page
+        ------------------------
+        
+        --1.MY_DATA 테이블 생성 (ID가 PRIMARY KEY)
+        DROP TAVLE MY_DATA;
+        CREATE TABLE MY_DATA_1(
+            ID NUMBER(4),
+            NAME  VARCHAR2(10),
+            USERID VARCHAR2(30),
+            SALARY NUMBER(10,2),
+            PRIMARY KEY(ID)
+        );
+        SELECT * FROM MY_DATA_1;
+        
+        --2.생성된 테이블에 위의 도표와 같은 값을 입력하는 SQL문을 작성
+        INSERT INTO MY_DATA_1 VALUES (1,'SCOTT','sscott',10000);
+        INSERT INTO MY_DATA_1 VALUES (2,'FORD','fford',13000);
+        INSERT INTO MY_DATA_1 VALUES (3,'PATEL','ppatel',333000);
+        INSERT INTO MY_DATA_1 VALUES (4,'REPORT','rreport',23500);
+        INSERT INTO MY_DATA_1 VALUES (5,'GOOD','ggood',44450);
+        SELECT * FROM MY_DATA_1;
+        
+        --3. TO_CHAR 내장 함수를 이용하여 입력한 자료를 위의 도표와 같은 형식으로 출력하는 SQL을 작성
+        -- TO_CHAR(날짜형 데이터,'YY/MM/DD HH:
+        -- TO_CHAR
+        SELECT ID, NAME, USERID, TO_CHAR(SALARY, '999,999.99') 
+            FROM MY_DATA_1;
+            
+        --4. 자료를 영구적으로 데이터베이스에 등록하는 명령어 작성
+        COMMIT;
+        
+        --5. ID가 3번인 사람의 급여를 650000.000으로 갱신하고 영구적으로 데이터베이스에 반영
+        UPDATE MY_DATA_1 SET SALARY = 650000.000 WHERE ID=3;
+        COMMIT;
+        SELECT * FROM MY_DATA_1;
+        
+        --6.NAME이 FORD인 사람을 삭제하고 영구적으로 데이터 베이스에 반영
+        --7.SALARY가 15,000.00 이하인 사람의 급여를 15,000.00으로 변경
+        --8.테이블 삭제 
+        
+        ------------------------
+        -- 연습문제 PDF 3page
+        ------------------------
+        
+        --1.EMP 테이블과 같은 구조와 같은 내용의 테이블 EMP01을 생성 (테이블이 있을시 제거 후) 하고 모든 사원의 부서번호를 30으로 수정
+        DROP TABLE EMP01;
+        CREATE TABLE EMP01 AS SELECT ;
+        
+        
+    SELECT * FROM EMP;    
+    SELECT * FROM DEPT;
     
+    
+    
+----------------------------------
+-- ★ 제약 조건
+-- INSERT, UPDATE 할 때, 제약조건에 맞는 데이터만 INSERT,UPDATE 됨
+----------------------------------
+
+-- (1) PRIMARY KEY  (테이블 생성시 필수) :  테이블의 각 행을 유일한 값으로 식별하기 위한 필드 
+-- (2) FOREIGN KEY : 테이블의 열이 다른 테이블의 열을 참조 
+-- (3) NOT NULL : NULL을 포함하지 않는 필드
+-- (4) UNIQUE : 모든 행의 값이 유일한 값. NULL은 허용(NULL값은 여러개 입력 가능)
+-- (5) CHECK (조건) : 해당 조건이 만족 (NULL값 허용)
+-- DEFAULT 기본값 : 해당 열의 데이터를 입력하지 않으면 원래는 NULL이 들어가는 것을 기본값이 들어가도록
+
+-- DEPT1 & EMP1 (ERD 작성 -> DDL)
+-- 테이블 설계도 ERD  (exERD를 이용하여 ERD를 작성)
+
+DROP TABLE DEPT1;
+CREATE TABLE DEPT1(
+    DEPTNO NUMBER(2) PRIMARY KEY ,
+    DNAME VARCHAR2(14) NOT NULL UNIQUE,
+    LOC VARCHAR2(14) NOT NULL
+);
+DROP TABLE DEPT1;
+CREATE TABLE DEPT1(
+    DEPTNO NUMBER(2)  ,
+    DNAME VARCHAR2(14) NOT NULL ,
+    LOC VARCHAR2(14) NOT NULL,
+    PRIMARY KEY (DEPTNO),
+    UNIQUE (DNAME)
+);
+
+SELECT * FROM DEPT1;
+
+DROP TABLE EMP1;
+CREATE TABLE EMP1(
+    EMPNO NUMBER(4) NOT NULL,
+    ENAME VARCHAR(10) NOT NULL,
+    JOB ARCHAR(9) NOT NULL,
+    MGR NUMBER(4),
+    HIREDATE DATE DEFAULT SYSDATE,
+    SAL NUMBER(7,2) CHECK(SAL>0),
+    COMM NUMBER(7,2) CHECK(COMM >=0),
+    DEPTNO NUMBER(2),
+    PRIMARY KEY(EMPNO) 
+);
+

@@ -1,0 +1,49 @@
+-- [V] Sequence : 순차번호 생성기. 대부분 인위적인 pk(primary key)사용 용도
+
+/*
+: CREATE SEQUENCE sequence_name 
+[INCREMENT BY n]   [START WITH n]  몇번부터 시작할지
+[MAXVALUE n] 몇까지 증가할지?  [MINVALUE n]
+[CYCLE | NOCYCLE] 
+[CACHE n | NOCACHE];
+
+*/
+
+DROP SEQUENCE FRIEND_SEQ;
+CREATE SEQUENCE FRIEND_SEQ
+            START WITH        1        -- 1부터 시작 (기본값)
+            INCREMENT BY 1        -- 1씩 증가 (기본값)
+            MAXVALUE        9999 -- 최대값
+            MINVALUE         1       -- 최소값 
+            NOCYCLE                     -- 순차번호 X, 끝남  CYCLE :  순차번호 9999 ->1
+            NOCACHE; -- 미리만들지 않음
+            
+SELECT FRIEND_SEQ.NEXTVAL FROM DUAL; -- 다음 순차번호 값
+SELECT FRIEND_SEQ.CURRVAL FROM DUAL; -- 현재 시퀀스 값 
+
+DROP TABLE FRIEND;
+CREATE TABLE FRIEND(
+    NO NUMBER(5) PRIMARY KEY,
+    NAME VARCHAR2(50) NOT NULL,
+    TEL VARCHAR(20) UNIQUE,
+    ADDRESS VARCHAR2(250),
+    LAST_MODIFY DATE DEFAULT SYSDATE
+    );
+DROP SEQUENCE FRIEND_SEQ;
+CREATE SEQUENCE FRIEND_SEQ
+    MAXVALUE 99999 -- 위의 FRIEND 생성할 때 NO NUMBER(5)이여서 5자리
+    NOCACHE NOCYCLE;  --싸이클이 아니라 99999까지하고 그이후 에러남 
+    
+SELECT * FROM FRIEND;
+INSERT INTO FRIEND (NO, NAME, TEL, ADDRESS) 
+    VALUES ( FRIEND_SEQ.NEXTVAL, '홍길동','010-2222-3443','서울');
+    
+INSERT INTO FRIEND (NO, NAME, TEL, ADDRESS) 
+VALUES ( FRIEND_SEQ.NEXTVAL, '유길동','010-2172-3573','서울');
+    
+INSERT INTO FRIEND (NO, NAME, TEL, ADDRESS) 
+VALUES ( FRIEND_SEQ.NEXTVAL, '홍길동',NULL,'서울');
+
+SELECT * FROM FRIEND;
+
+DELETE FROM FRIEND WHERE TEL IS NULL;
