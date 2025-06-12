@@ -1,0 +1,27 @@
+             예측0  ｜  예측1
+실제 0     TN     ｜     FP
+―――――――――――――――――
+실제 1     FN     ｜     TP
+
+※ accuracy(정확도) : (TN+TP)/(TN+FP+FN+TP) : 전체 사람중 환자,정상인만 맞춘 비율
+                         : 전체 예측 결과-전체중 맞춘 비율
+
+※ precision(정밀도) : TP/ (FP+TP) : 예측값기준(환자라고 예측한 사람들중 실제 환자인 비율)
+                          : 예측이 양성인 것들 기준-예측을 믿을 수 있는지(양성 예측 정확성)
+		-precision을 높이기 위해서는 확실한것만 Positive로 예측
+
+※ recall(재현율) : TP/(FN+TP) : 실제값기준(실제로 환자인 사람들 중에서, 모델이 얼마나 잘 찾아냈는지)
+                                       : 실제 양성인 것들 기준-얼마나 잘 놓치지않고 찾아냈는지?(민감도)
+			-recall을 높이려면 조금이라도 가능성이 있으면 Positive로 예측
+
+※ f1 score = recall과 precision의 조화 평균
+
+       precision*recall
+  2*―――――――――
+       precision+recall
+
+- Precision ↑ → Recall ↓
+- Recall ↑ →  Precision↓
+
+- precisin을 높이려면 확실한 것만 Positive로 예측
+- recall을 높이려면 조금이라도 가능성이 있으면 Positive로 예측

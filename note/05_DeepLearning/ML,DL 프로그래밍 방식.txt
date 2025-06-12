@@ -1,0 +1,44 @@
+[회귀분석]
+회귀분석(linear regression) 설명 사이트 : https://gbhat.com/machine_learning/linear_regression.html
+
+▶ 머신러닝 프로그램 방식
+    <유의사항 : 데이터에 결측치가 존재하면 연산(추출)이 불가 / 결측치 처리, 이상치 처리 완료 필수>
+	결측치 처리 : 누락된 데이터를 평균/중간값으로 채우거나 제거
+	정규화/표준화 : MinMaxScaler / StandardScaler
+  1. 데이터 확보 및 생성
+  2. 데이터 전처리 : 
+	스케일 조정, 
+	훈련데이터(Training Data) : 모델을 학습시키는데 사용할 데이터, 입력(독립변수)과 결과(종속변수)가 필요
+	검증데이터셋(Validation Data) : 학습 도중 모델 성능 평가 , 과적합(overfitting)방지용으로 활용, 학습에는 사용하지 않지만 학습중에는 참조
+	시험데이터셋(Test Data) : 최종 성능 평가 , 학습이나 검증중 한번도 참조하지 않은 데이터 , 실제 환경에서 얼마나 작 작동하는지 확인에 필요 
+  3. 모델구성 
+	from tensorflow.keras.models import Sequential #모델 생성
+	from tensorflow.keras.layers import Dense, Input #입력값과 출력값으로 Layer층 지정
+	model = Sequential() #빈모델 생성
+
+  4. 모델 학습과정 설정
+	손실 함수(Loss Function) : (예측값)-(실제값) 사이의 오차 계산 함수 :모델이 얼마나 틀렸는지 수치화/ 모델 학습 중 최소화 하기위해 사용
+		mse : 오차 제곱의 평균 (이상치 영향이 상승)
+		mae : 오차 절대값의 평균(이상치 영향이 감소)
+		다중 클래스 분류(One-Hot) : categorical_crossentropy
+		회귀 : MSE(Mean Squared Error)
+		분류 : Cross Entropy(교차 엔트로피)
+		compile()함수 이용, 
+	 => 산의 지형처럼 생김 
+	옵티마이저 : 모델의 파라미터(가중치 등)를 조금씩 조정해서 손실을 줄임 (손실함수를 줄이도록 모델의 가중치 조정)
+		SDG (확률적 경사하강법)
+		Adam, RMSProp, Adagrad 등 
+	=> 가장 낮은 지점(최솟값)을 향해 내려가는 방법 
+ 	평가지표 : 학습이 잘 되고 있는지 측정하는 도구 , 모델 성능 평가 기능 수치화 
+  5. 모델 학습
+	hist = model.fit(입력변수(훈련데이터),타겟변수(훈련데이터)종속변수,epochs=n(학습횟수),verbose=n(학습시 출력여부 0=미출력, 1=일반 출력, 2=세부출력)
+		     fit()함수 이용 - 훈련셋입력=독립변수, 훈련셋타겟=종속변수, 학습횟수, 검증셋 
+  6. 모델 평가 (시험 데이터셋)
+	시험셋(테스트셋)을 인자로 넣은 evaluate()함수 이용, 그래프 생성
+	그래프를 통해 lost와 metric값의 추이, 평가함수 
+	hist.history.keys()를 통해 체크 
+	import matplotlib.pyplot as plt를 통해 그래프 그리기
+	
+  7.모델 저장 및 사용 (입력값이 주어지면 예측값 받기)	
+	model.predict를 통해 예측 (predict()이용. 입력데이터는 2차원[[0]])
+	save()함수를 이용해서 저장. 저장된 모델은 load_model()함수를 이용해서 불러올 수 있음

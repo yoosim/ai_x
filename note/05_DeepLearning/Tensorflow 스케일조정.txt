@@ -1,0 +1,43 @@
+Tensorflow
+- 데이터 흐름 그래프 (tensor 객체의 흐름)
+- 이 그래프는 node(상수, 변수, 연산)와 edge로 구성)
+   : node : 작업 또는 연산
+   : edge : 데이터 흐름 / 종속 관계
+- tf.Session()으로 실행 
+ - sess.run()을 통해 값을 확인
+
+입력(독립)변수 x가 1개, 타겟(종속)변수 y가 1개일 때 
+x,y의 값 지정되면 W,b의 값은 초기 랜덤값으로 세팅하고 학습되면서 변경되는 값으로 바뀜 
+W = tf.Variable(tf.random.normal([1]), name='weight')
+b = tf.Variable(tf.random.normal([1]), name='bias')
+tf. random.normal([1])  : 평균0, 표준편차 1인 정규분포에서 숫자 하나 샘플링(초기값)
+tf. Variable(...) : 학습 가능한 변수로 선언( 훈련중 변경될 수 있음)
+각 1개씩의 값이라서  H = W*x +b 로 바로 계산이 됨.
+
+tf.square(x) : x**2 (x의 제곱) 
+tf.reduce_mean(x) : x의 평균 계산 함수 
+placeholder : 사용자가 데이터를 나중에 집어넣기위해 사용하는 입력용 변수 (값지정x, 빈 값이며 나중에 채워넣는 자리)
+	     외부에서 데이터를 입력받는 노드
+		X = tf.placeholder(shape=[None,2], dtype=tf.float32)이런식으로 사용도 함. None의 값을 넣음으로 아무거나 2자리를 만듬 
+
+★★<scale이 다른 데이터의 linear regression을 구현>★★
+scale을 맞추기 : 모든 데이터를 일정 범위내로 조정
+nomalization(정규화) : 0~1 사이로 조정
+
+                     X - Xmin
+  nomalization = ────────
+                    Xmax - Xmin
+      *위의 식을 써도 되지만 라이브러리를 씀 (sklearn.preprocessing.MinMaxScaler이용)
+standardization(표준화) : 평균 0, 표준편차 1로 조정
+
+                      X - Xmean(평균)
+  standardization = ──────────
+                       Xstd(표준편차)  
+      *위의 식을 써도 되지만 라이브러리를 쓰 (sklearn,preprocessing.StandardScaler이용)
+
+- XOR(eXclusive OR)
+   : 둘 다 같은 값이면 0 / 하나라도 다르면 1
+
+- layer 층 관련
+	layer 층 x_data 2개 -> 10개 -> 20개 -> 10개 -> 1개
+                         입력층          hidden layer(relu)         출력층(sigmoid)   
