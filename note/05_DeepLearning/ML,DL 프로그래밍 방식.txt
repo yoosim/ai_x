@@ -22,7 +22,9 @@
 		mae : 오차 절대값의 평균(이상치 영향이 감소)
 		다중 클래스 분류(One-Hot) : categorical_crossentropy
 		회귀 : MSE(Mean Squared Error)
-		분류 : Cross Entropy(교차 엔트로피)
+		분류 : Cross Entropy(교차 엔트로피)  
+		이진 : binary_cro 
+		분류 분석(이진) : categorientropy
 		compile()함수 이용, 
 	 => 산의 지형처럼 생김 
 	옵티마이저 : 모델의 파라미터(가중치 등)를 조금씩 조정해서 손실을 줄임 (손실함수를 줄이도록 모델의 가중치 조정)
@@ -42,3 +44,16 @@
   7.모델 저장 및 사용 (입력값이 주어지면 예측값 받기)	
 	model.predict를 통해 예측 (predict()이용. 입력데이터는 2차원[[0]])
 	save()함수를 이용해서 저장. 저장된 모델은 load_model()함수를 이용해서 불러올 수 있음
+
+------
+과적합(Overfitting) : 훈련 데이터를 과하게 학습한 경우  
+	* 과적합을 막기 위한 방법 Dropout(드롭아웃), Early Stopping(조기 종료) 
+콜백함수 :
+	Early Stopping(조기 종료) 
+	
+------활성화 함수 특징
+	1. sigmoid(시그모이드) : loss(손실)을 미분을 통해 gradient(기울기)를 구하고 backpropagation(역전파)를 수행  / 이진 분류 모델의 마지막 활성화 함수
+	2. Hyperbolic tangent function(하이퍼볼릭탄젠트) : -1과 1사이의 값으로 변환 
+	3. ReLU(렐루) : 음수를 입력하면 0으로 출력, 양수로 입력하면 입력값을 그대로 반환 / 기본적으로 은닉층에 사용하는 활성화 함수
+	4. Leaky ReLU(리키 렐루) : 입력값이 음수일경우 0이 아닌 0.001과 같은 매우 작은수를 반환 
+	5. Softamx Function(소프트맥스) : 0~1사이로 변환하지만 합이 1이 되는 함수  / 다중 분류 모델의 마지막 활서화 함수 
