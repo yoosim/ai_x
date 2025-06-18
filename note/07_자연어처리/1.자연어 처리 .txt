@@ -1,0 +1,30 @@
+▶ NLTK 패키지 : 자연어처리를 위한 강력하고 사용하기 쉬운 라이브러리
+1.텍스트 전처리 : 토큰화(어절, 문장나누기), 정규화(정규표현식 활용), 불용어 제거, 표제어추출(기본형태로 변환)
+2.품사태깅 : 단어 품사 식별
+3.어휘 데이터 베이스 사용
+4.구조화된 문서의 빈도수, 분류분석, 연관분석, 감정분석 (단점)속도가 느림
+
+말뭉치(corpus)
+ - kolaw : 한국 법률 말뭉치 
+ - kobill : 대한민국 국회 의안 말뭉치
+토큰 생성(tokenizing)
+ - sent_tokenize() : 문장단위으로 나눠 list로 반환
+ - word_tokenize() : 단어토큰으로 나눠 list 반환
+ - RegexpTokenizer() : 토큰화할 때 해당 정규표현식에 해당하는 word만 적용
+형태소 분석(morphological analysis)
+ >>>영어 형태소 분석 
+ - PorterStemmer
+ - LancasterStemmer
+ - RegexpStemmer
+ >>>한글 형태소 분석
+ - konlpy
+ - komoran
+ - hannanum
+ - kkma
+ - okt
+ - 위드클라우드 : 빈도 분석된 데이터를 시각화하기 위해 워드클라우드를 사용
+ >>>다국어 바인딩
+ - mecab
+
+품사 태깅(POS tagging)
+ - pos_tag 
