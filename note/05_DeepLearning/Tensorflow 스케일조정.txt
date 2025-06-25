@@ -33,7 +33,7 @@ standardization(표준화) : 평균 0, 표준편차 1로 조정
                       X - Xmean(평균)
   standardization = ──────────
                        Xstd(표준편차)  
-      *위의 식을 써도 되지만 라이브러리를 쓰 (sklearn,preprocessing.StandardScaler이용)
+      *위의 식을 써도 되지만 라이브러리를 씀 (sklearn,preprocessing.StandardScaler이용)
 
 - XOR(eXclusive OR)
    : 둘 다 같은 값이면 0 / 하나라도 다르면 1

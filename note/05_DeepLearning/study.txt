@@ -1,0 +1,75 @@
+인공지능 모델링 
+
+1.인공지능 학습에 대한 문제
+▶DNN은 무슨학습인지 
+: 비지도 학습 / 지도 학습
+ 비지도 학습 : 입력변수 1개
+ 지도 학습 : 입력변수,타겟변수 
+   DNN은 지도학습
+----------
+DNN,RNN,LSTM,자연어처리
+▶스케일조정(정규화,표준화) 의 목적 : 계산의 안정성 향상을 위해 
+LOSS 계산할 때 안정적으로 떨어짐 
+
+▶ 모델 구현 
+ model=Sequential() : 순차적인 레이어 생성 
+ model=Model() : 병렬처리(seq2se2)
+이진분류 출력층 model.add(Dense(1,activation='sigmoid')) / 활성화 함수
+다중분류 출력층 model.add(Dense(n,activation='softmax')) / 활성화 함수
+
+▶학습과정 설정 
+ 1)손실함수(loss function) 설정 : 
+ - 이진 분류 : binary_cross
+ - 다중 분류 : categorical_crossentropy
+ - 원핫인코딩안 했을 때 : sparse_categorical_crossentropy
+ 2)옵티마이저(Adam)
+ 3)매트릭스(평가지표) : 학습이 잘 되고 있는지 측정하는 도구, 모델 성능 평가 기능 수치화 
+  	혼동행렬 : 테스트 데이터 셋의 실제값과 예측값으로 작성된 교차표
+	TP(True Positive) : 정답 -> 병이 있는 환자를 맞춤
+	TN(True Negative) : 정답 -> 건강한 사람을 맞춤
+	FP(False Positive) : 틀림 -> 건강한 사람을 환자로 잘못 판단
+	FN(False Negative) : 틀림 -> 환자를 건강하다고 잘못 판단
+
+	accuracy(정확도) : (TN+TP)/(TN+FP+FN+TP) : 전체 사람중 환자,정상인만 맞춘 비율
+	  :전체 예측 결과-전체중 맞춘 비율
+	precision(정밀도) : TP/ (FP+TP) : 예측값기준(환자라고 예측한 사람들중 실제 환자인 비율)
+	  :예측이 양성인 것들 기준-예측을 믿을 수 있는지(양성 예측 정확성)
+	-precision을 높이기 위해서는 확실한것만 Positive로 예측
+	recall(재현율) : TP/(FN+TP) : 실제값기준(실제로 환자인 사람들 중에서, 모델이 얼마나 잘 찾아냈는지)
+	 :실제 양성인 것들 기준-얼마나 잘 놓치지않고 찾아냈는지?(민감도)
+	-recall을 높이려면 조금이라도 가능성이 있으면 Positive로 예측
+▶모델학습
+ 1) accuracy를 늘이기 위한 방법
+  데이터 확보
+  모델 수정(레이어 추가, units수 증가)
+  과적합 방지(validation data 추가, tanh)
+  epoch 조정
+  optimizer 변경 (*미비한 변화)
+  2) 과적합 줄이기 위한 방법 
+  데이터 확보, 데이터 증강,Dropout,활성화 함수:relu
+
+▶모델저장 : 딥러닝에서의 모델 저장 : *.h5 / 
+                 머신러닝에서의 모델 저장: .pikle
+
+▶자연어처리 : knolpy
+	nounns : 명사만 추출
+	pos : 품사 태깅(한 문장을 단어 단위로 나눠 품사 태깅) (startswith로 주로 사용함)
+
+
+▶RNN / LSTM  : 시계열데이터 예측, 자연어 생성, 작곡 편곡
+[RNN]
+단어마다 숫자로 변경
+시퀀스 -> 패딩 -> 텐서변환 -> RNN 입력
+
+Tokenizer() 텍스트를 숫자 시퀀스로 변환 
+
+*시퀀스(Sequence)
+  : 원본 입력 데이터 
+*패딩 (Padding)
+  : 시퀀스 길이를 맞추기 위해 0을 추가 
+*입력변환(Tensor 형태로 변형)
+  : 패딩된 시퀀스를 텐서로 바꾸고, 배치(batch)를 구성
+    shape ->임베딩을 거쳐 
+임베딩백터
+학습할때마다 줄여줌, 임베딩백터가 파라미터
+예) 10000*5 @ 5*2 = 10000*2
