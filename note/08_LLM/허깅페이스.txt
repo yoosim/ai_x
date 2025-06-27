@@ -1,0 +1,26 @@
+[허깅페이스]
+
+1. 텍스트 기반 감정분석(긍정/부정)
+Transformers 라이브러리 내 pipeline()함수
+from transformers import pipeline
+INference API : key를 사용
+
+2.제로-샷 분류(zero-shot-classification)
+
+3.text 생성
+
+4.마스크 채우기
+
+5.개채명인식(NER:Named Entity REcognition)
+
+6.질의응답
+
+7.문서 요약
+import torch
+
+8.번역 
+
+9.이미지 설명하는 텍스트 생성
+
+10.이미지 분류
+ 
