@@ -1,0 +1,24 @@
+[html]
+1. 웹(web)이란?
+	▶ 프로토콜(Protocol) : 네트워크상에서 약속한 통신규약(Http, FTP, SMTP, POP, DHCP) 
+	  Http : HyperText Transfer Protocol 정보를 가져와 브라우저 화면상에서 봄
+	  FTP : File Transfer Protocol. 파일을 다운
+	  SMTP, POP : 메일 송수신 protocol
+	  DHCP : Dynamic Host Configuration Protocol 다이나믹하게 계속 사설 ip 분배해주는 하여 Web을 사용하도록 하는 protocol
+	▶IP : 네트워크상에서 컴퓨터를 식별할 수 있는 주소
+	▶DNS : IP주소를 인간이 쉽게 외우도록 맵핑한 문자열
+	▶Port : IP주소가 컴퓨터를 식별할 수 있게 해준다면, Port번호는 해당컴퓨터의 구동되고 있는 프로그램을 구분할 수 있는 번호
+
+2.HTML이란?
+	HTML이란, Hyper Text Markup Language의 약자로서 웹문서를 기술하는 언어
+	웹문서를 표현하기 위해 태그들로 구성
+3.CSS란?
+	Cascading Style Sheets의 약자로, HTML문서를 디자인적으로 예쁘게 만들어 정보 전달을 좀더 효율적으로 하기 위해 만들어진 문서
+	HTML은 정보를 가지고 있고, CSS는 화면상의 레이아웃등의 디자인을 컨트롤하는 문서
+4.JavaScript(동적인 내용) -> jQuery
+5. 기본적인 웹 포준 문서의 상호관계 
+	(1)HTML 웹 문서의 구조, 정보
+	(2)CSS : 표현(디자인) 담당
+	(3)Java Script : 동작을 담당
+
+	

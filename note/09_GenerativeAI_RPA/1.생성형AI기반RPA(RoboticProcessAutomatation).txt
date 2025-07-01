@@ -1,2 +1,40 @@
+[생성형AI 기반 RPA]
+1. 가상환경 만들기 
+1)python -m venv .venv ->".venv"의 가상환경 생성
+2).venv\Scripts\activate -> 가상환경 들어가기
+
+python.exe -m pip install --upgrade pip
+pip install numpy==1.23.5 pandas==1.5.3
+pip install xlwings  엑셀 파일 활용
+pip install python-decouple python-dotenv
+pip install openai
+pip install pyinstaller                         py(파이썬코드) 파일을 EXE(실행파일)로 바꿀 때 필요
+
+pip freeze > requirements.txt 현재 가상환경 라이브러리 목록
+
+py 파일을 실행파일로 만들기 : 
+pyinstaller --onefile 2-2_naverReport.py을 실행하면,
+dist폴더에 exe실행 파일을 root로 옮겨 파일명을 "genai_rpa.exe"로 변경
+
+파일 실행 내용
+1)파일 만들기 
+import xlwngs as xw 
+현재 열린 엑셀 파일의 활성화된 시트를 가져올 수 있다.
+wb = xw.apps.active.books.active
+
+2)해당셀의 정보 가져오기
+b1 = sheet.range('B1').value 
+b2 = sheet.range('B2').value
+b1-b2=b3를 할 수 있음('B3')
+sheet.range('B3').value=b1-b2
+
+3)파일 경로 설정할 때 os.getcwd()는 현재 폴더를 설정할 수 있음
+
+4)envConfig는 2가지로 가져올 수 있다.
+ -os.getenv('CLIENT_ID')
+ -config('CLIENT_ID')
+
+
+-------
 자동화 pip
 윈도우프로그램 (자동화)
