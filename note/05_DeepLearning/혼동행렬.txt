@@ -1,7 +1,8 @@
              예측0  ｜  예측1
-실제 0     TN     ｜     FP
+실제 0     TN     ｜     FP (1종 오류, 오탐)
 ―――――――――――――――――
 실제 1     FN     ｜     TP
+        (2종 오류)
 
 ※ accuracy(정확도) : (TN+TP)/(TN+FP+FN+TP) : 전체 사람중 환자,정상인만 맞춘 비율
                          : 전체 예측 결과-전체중 맞춘 비율
@@ -19,6 +20,10 @@
        precision*recall
   2*―――――――――
        precision+recall
+※ fbeta score = recall,precision의 가중치 조정한 score
+※ 위양성율 : FP / (TN+FP)
+※ 특이도 : TN / (TN+FP)
+              (일반인 중 일반인으로 예측)
 
 - Precision ↑ → Recall ↓
 - Recall ↑ →  Precision↓
