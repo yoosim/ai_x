@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+__pycache__
+.env
+data/
+project(신림동 짜장면)-data/
+신림동 짜장면_restaurant_data/
