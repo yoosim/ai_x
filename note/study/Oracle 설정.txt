@@ -1,0 +1,32 @@
+1. Oracle setup후, cmd창을 띄워 다음을 실행
+
+2. system계정 접속후, scott 계정 생성, 권한 부여
+	C:\Users\Admin> sqlplus system/설치할때 만든 비번(oracle) 
+	※※※비밀번호를 모른다면? [sqlplus "/as sysdba]을 치면 됨
+	SQL>create user scott identified by tiger;  하면
+	User created. 성공
+
+	SQL>grant dba to scott; 하면
+	Grant succeeded. 성공
+
+	SQL>exit 하면 
+	C:\Users\Admin>계정으로 돌아옴
+
+3.scott 계정 접속후, 데이터 확인
+	C:\Users\Admin>sqlplus scott/tiger 하면 SQL scott으로 접속 
+	SQL>SELECT * FROM TAB; -- 소유 테이블 확인
+
+4. 수업에 쓸 데이터 넣기  (오라클에서 배포한 것)
+	SQL>@C:/ai_x/lecNote/04_DBMS/demo.sql; (폴더이름과 파일 이름 작성)
+
+5.scott계정 접속 후 , 데이터 확인
+	C:\Users\Admin>sqlplus scott/tiger 
+	SQL>SELECT * FROM TAB; -- 소유 테이블 확인
+	SQL>SELECT * FROM DEPT;
+
+-------
+Oracle에서 계정 설정
+왼쪽 접속에서 +(녹색버튼) 
+사용자 이름 : scott
+비밀번호 :tiger
+하단 테스트 누르면 좌측 상태에 '성공'이라고 뜸  그 이후 저장 

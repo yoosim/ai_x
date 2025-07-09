@@ -1,0 +1,18 @@
+soup.select_one('선택자') : 해당 선택자 처음 하나만 가져오기 
+soup.select('선택자') : 해당 선택자 모든 엘리먼트를 리스트로 가져오기 
+
+정적웹데이터 수집 (~/robots.txt에 사이트마다의 크롤링 허용범위)
+방법1 : request모듈 이용
+headers = {'user-agent':'user-agent내용(브라우저에서 복사)'}
+response = requests.get(url, headers=headers) # url에 한글,특수문자(' ')
+soup = BeautifulSoup(response.text, 'html.parser')
+
+방법2 : urllib.request모듈 이용
+urllib.parse.quote('url의 한글부분)이용
+request = rullib.request.Requesr(url, headers=headers)
+response = urllib.request.urlopen(url 또는 request(headers를 쓴다면 이걸 써야 함))
+soup = BeatifulSoup(response,'html.parser')
+
+=> soup.select('선택자')나 soup.select_one('선택자')나
+     soup.find('태그','속성(dict,class_)나 
+     soup.find_all('태그들 list',속성)
