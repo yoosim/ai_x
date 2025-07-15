@@ -19,9 +19,9 @@ app.template_filter("mask_pw")(mask_password)
 # 	return "*" * len(password)
 
 #동적 요청 경로 (수정이나 삭제 할 때)
-@app.route("/user/<name>") #, methods=['GET'] - 생략됨 ) # /user/hong
-def viewfunction_handlerFunction(name):
-	return f"<h1>{name}님 환영합니다</h1>"
+# @app.route("/user/<name>") #, methods=['GET'] - 생략됨 ) # /user/hong
+# def viewfunction_handlerFunction(name):
+# 	return f"<h1>{name}님 환영합니다</h1>"
 
 #정적 요청 경로
 @app.route("/user") # /user?name=hong
