@@ -1,0 +1,4 @@
+vscode로 가상환경 만들기 
+ctrl+j 터미널 열고 터미널에 작성 
+1) python -m venv .venv
+2) 파이썬 새파일 만들기 

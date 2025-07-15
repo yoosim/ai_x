@@ -1,0 +1,2698 @@
+[
+  {
+    "category": "카테고리 1",
+    "name": "더블 스모크쉑 세트",
+    "price": "21,600원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "핫치킨 세트",
+    "price": "14,600원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "더블 쉑마이스터 버거 세트",
+    "price": "19,700원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "베이컨 블루치즈 버거 세트",
+    "price": "15,100원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "에멘탈 크림치즈 버거 세트",
+    "price": "15,700원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "BLT치킨쉑 세트",
+    "price": "16,100원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "스모크쉑 세트",
+    "price": "16,600원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "베이컨 쉑버거 세트",
+    "price": "16,600원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "더블 베이컨 쉑버거 세트",
+    "price": "21,600원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "쉑스택 세트",
+    "price": "20,700원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "쉑버거 세트",
+    "price": "14,100원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "더블 쉑버거 세트",
+    "price": "19,100원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "치킨쉑 세트",
+    "price": "13,600원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "슈룸버거 세트",
+    "price": "15,700원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "트리플 쉑버거 세트",
+    "price": "24,100원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "쉑마이스터 버거 세트",
+    "price": "14,700원",
+    "description": "All day 세트 ! 할인된 가격으로 즐겨보세요.",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "에멘탈 크림치즈 버거",
+    "price": "10,800원",
+    "description": "",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "베이컨 블루치즈 버거",
+    "price": "10,200원",
+    "description": "",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "쉑마이스터 버거",
+    "price": "9,800원",
+    "description": "쉐이크쉑 추천 메뉴",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "베이컨 쉑버거",
+    "price": "11,700원",
+    "description": "",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "쉑 버거",
+    "price": "9,200원",
+    "description": "",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "슈룸 버거",
+    "price": "10,800원",
+    "description": "",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "쉑 스택",
+    "price": "15,800원",
+    "description": "포토벨로 버섯패티, 비프패티와 함께 토마토, 양상추, 쉑소스가 토핑된 치즈버거",
+    "type": "naver_order",
+    "brand": "쉐이크쉑"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "빅맥® 세트",
+    "price": "가격 없음",
+    "description": "100% 순 쇠고기 패티 두 장에 빅맥®만의 특별한 소스 입안에서 살살 녹는 치즈와 신선한 양상추, 양파, 그리고 피클까지 50년 넘게 전 세계인의 입맛을 사로 잡은 버거의 대명사",
+    "type": "place_section",
+    "brand": "맥도날드"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "맥스파이시® 상하이 버거 세트",
+    "price": "가격 없음",
+    "description": "매콤한 시즈닝을 입힌 100% 닭가슴 통살 위에 아삭아삭한 양상추와 신선한 토마토~ 겉은 바삭, 속은 부드러운 치킨 패티의 매콤함으로 입맛도 기분도 화끈하게!",
+    "type": "place_section",
+    "brand": "맥도날드"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "1955 버거™ 세트",
+    "price": "가격 없음",
+    "description": "113g 두툼한 순 쇠고기 패티, 더 풍성해진 신선한 양상추, 깊은 풍미의 그릴드 어니언까지! 맥도날드가 처음 생긴 1955년의 맛을 담은 영원한 오리지널 1955 버거",
+    "type": "place_section",
+    "brand": "맥도날드"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "불고기 버거 세트",
+    "price": "가격 없음",
+    "description": "한국인의 입맛에 딱 맞는 불고기 소스에 잘 재운 패티와 고소한 마요네즈, 신선한 양상추의 맛있는 조합.",
+    "type": "place_section",
+    "brand": "맥도날드"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "슈슈 버거 세트",
+    "price": "가격 없음",
+    "description": "탱~글한 통새우살 가득~ 슈슈 버거",
+    "type": "place_section",
+    "brand": "맥도날드"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "베이컨 토마토 디럭스 세트",
+    "price": "가격 없음",
+    "description": "더욱 풍부하고 신선한 맛의 프리미엄 버거",
+    "type": "place_section",
+    "brand": "맥도날드"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "더블 한우불고기버거 세트",
+    "price": "가격 없음",
+    "description": "국내산 한우를 사용한 패티 2장 구성으로 육즙 가득 묵직한 육풍미를 특징으로 한 프리미엄 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "모짜렐라 인 더 버거 베이컨 세트",
+    "price": "가격 없음",
+    "description": "자연산 모짜렐라 치즈와 고소한 베이컨이 만나 풍부한 맛의 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "리아 불고기 더블(빅불) 세트",
+    "price": "가격 없음",
+    "description": "불고기패티 2장으로 더 진하고 더 커진 빅 불고기버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "김치불고기버거 세트",
+    "price": "가격 없음",
+    "description": "드디어 만난 불고기와 김치의 근본적 맛남 한국의 대표되는 음식을 사용하여 한국적인 컨셉을 극대화한 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "에그김치불고기버거 세트",
+    "price": "가격 없음",
+    "description": "드디어 만난 불고기와 김치의 근본적 맛남 한국의 대표되는 음식을 사용하여 한국적인 컨셉을 극대화한 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "오징어 얼라이브버거 매운맛 세트",
+    "price": "가격 없음",
+    "description": "오징어 한마리가 통째로 이색적인 외관의 씨푸드버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "오징어 얼라이브버거 블랙페퍼맛 세트",
+    "price": "가격 없음",
+    "description": "오징어 한마리가 통째로 이색적인 외관의 씨푸드버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "모짜렐라버거세트 토마토바질",
+    "price": "가격 없음",
+    "description": "바질의 신선함을 담은 바질마요소스에 풍부하고 진한 토마토소스로 맛을낸 스폐셜 모짜렐라버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "모짜렐라버거세트 발사믹바질",
+    "price": "가격 없음",
+    "description": "바질의 신선함을 담은 바질마요소스에 레드와인 발사믹의 산뜻함을 더한 스페셜 모짜렐라버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "전주비빔라이스버거세트",
+    "price": "가격 없음",
+    "description": "전주비빔밥을 담은 라이스번과 노른자가 터지는 반숙란, 달콤한 고추장소스가 어우러진 새로운 라이스버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "리아 새우 베이컨 세트",
+    "price": "가격 없음",
+    "description": "베이컨+토마토로 더욱 풍성해진 맛과 볼륨감의 새우버거 업그레이드 한정판",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "리아 불고기 베이컨 세트",
+    "price": "가격 없음",
+    "description": "베이컨+토마토로 더욱 풍성해진 맛과 볼륨감의 불고기버거 업그레이드 한정판",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "더블 클래식치즈버거 세트",
+    "price": "가격 없음",
+    "description": "두 장의 패티가 이루는 조화로운 맛에 든든함까지 추가된 더블 클래식치즈버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "더블 치킨버거 세트",
+    "price": "가격 없음",
+    "description": "두 장의 패티가 이루는 조화로운 맛에 든든함까지 추가된 더블 치킨버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "더블 데리버거 세트",
+    "price": "가격 없음",
+    "description": "두 장의 패티가 이루는 조화로운 맛에 든든함까지 추가된 더블 데리버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "더블 한우불고기버거 세트",
+    "price": "가격 없음",
+    "description": "국내산 한우를 사용한 패티 2장 구성으로 육즙 가득 묵직한 육풍미를 특징으로 한 프리미엄 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "한우불고기버거 세트",
+    "price": "가격 없음",
+    "description": "브리오쉬번에 국내산 한우를 사용한 패티, 신선한 야채, 특제소스로 완성한 프리미엄 햄버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "모짜렐라 인 더 버거 베이컨 세트",
+    "price": "가격 없음",
+    "description": "자연산 모짜렐라 치즈와 고소한 베이컨이 만나 풍부한 맛의 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "리아 불고기 더블(빅불) 세트",
+    "price": "가격 없음",
+    "description": "불고기패티 2장으로 더 진하고 더 커진 빅 불고기버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "더블 미라클버거 세트",
+    "price": "가격 없음",
+    "description": "100% 식물성 패티와 신선한 야채들이 조화된 대체육버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "더블엑스투버거 세트",
+    "price": "가격 없음",
+    "description": "비프패티2장, 치즈2장으로 깊고 풍부한맛의 정통 아메리칸버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "핫크리스피치킨버거 세트",
+    "price": "가격 없음",
+    "description": "닭가슴살 패티로 만든 매콤 화끈한 프리미엄 치킨버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "리아 사각새우 더블 세트",
+    "price": "가격 없음",
+    "description": "미니새우패티 2장의 새우 매니아를 위한버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "미라클버거 세트",
+    "price": "가격 없음",
+    "description": "100% 식물성 패티와 신선한 야채들이 조화된 대체육버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "클래식치즈버거 세트",
+    "price": "가격 없음",
+    "description": "비프와 치즈 본연의 맛에 딜향의 피클이 조화된 클래식 치즈버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "리아 불고기 세트",
+    "price": "가격 없음",
+    "description": "두툼한 쇠고기패티와 한국적인 맛의 소스가 잘 조화된 롯데리아 대표 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "리아 새우 세트",
+    "price": "가격 없음",
+    "description": "새우살을 가득넣어 더 맛있어진 오리지널 새우버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "티렉스버거 세트",
+    "price": "가격 없음",
+    "description": "빵보다 큰 쫄깃한 통닭다리살 패티와 부드러운 크림 소스의 만남",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "치킨버거 세트",
+    "price": "가격 없음",
+    "description": "닭고기 패티와 데리야끼 소스로 만든 담백하고 달콤한 맛의 치킨버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "데리버거 세트",
+    "price": "가격 없음",
+    "description": "쇠고기패티에 달콤 짭짤한 데리소스를 더한 가성비 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "김치불고기버거",
+    "price": "가격 없음",
+    "description": "드디어 만난 불고기와 김치의 근본적 맛남 한국의 대표되는 음식을 사용하여 한국적인 컨셉을 극대화한 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "에그김치불고기버거",
+    "price": "가격 없음",
+    "description": "드디어 만난 불고기와 김치의 근본적 맛남 한국의 대표되는 음식을 사용하여 한국적인 컨셉을 극대화한 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "오징어 얼라이브버거 매운맛",
+    "price": "가격 없음",
+    "description": "오징어 한마리가 통째로 이색적인 외관의 씨푸드버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "오징어 얼라이브버거 블랙페퍼맛",
+    "price": "가격 없음",
+    "description": "오징어 한마리가 통째로 이색적인 외관의 씨푸드버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "모짜렐라버거 토마토바질",
+    "price": "가격 없음",
+    "description": "바질의 신선함을 담은 바질마요소스에 풍부하고 진한 토마토소스로 맛을낸 스폐셜 모짜렐라버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "모짜렐라버거 발사믹바질",
+    "price": "가격 없음",
+    "description": "바질의 신선함을 담은 바질마요소스에 레드와인 발사믹의 산뜻함을 더한 스페셜 모짜렐라버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "전주비빔라이스버거",
+    "price": "가격 없음",
+    "description": "전주비빔밥을 담은 라이스번과 노른자가 터지는 반숙란, 달콤한 고추장소스가 어우러진 새로운 라이스버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "리아 새우 베이컨",
+    "price": "가격 없음",
+    "description": "베이컨+토마토로 더욱 풍성해진 맛과 볼륨감의 새우버거 업그레이드 한정판",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "리아 불고기 베이컨",
+    "price": "가격 없음",
+    "description": "베이컨+토마토로 더욱 풍성해진 맛과 볼륨감의 불고기버거 업그레이드 한정판",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "더블 클래식치즈버거",
+    "price": "가격 없음",
+    "description": "두 장의 패티가 이루는 조화로운 맛에 든든함까지 추가된 더블 클래식치즈버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "더블 치킨버거",
+    "price": "가격 없음",
+    "description": "두 장의 패티가 이루는 조화로운 맛에 든든함까지 추가된 더블 치킨버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "더블 데리버거",
+    "price": "가격 없음",
+    "description": "두 장의 패티가 이루는 조화로운 맛에 든든함까지 추가된 더블 데리버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "더블 한우불고기버거",
+    "price": "가격 없음",
+    "description": "국내산 한우를 사용한 패티 2장 구성으로 육즙 가득 묵직한 육풍미를 특징으로 한 프리미엄 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "한우불고기버거",
+    "price": "가격 없음",
+    "description": "브리오쉬번에 국내산 한우를 사용한 패티, 신선한 야채, 특제소스로 완성한 프리미엄 햄버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "모짜렐라 인 더 버거 베이컨",
+    "price": "가격 없음",
+    "description": "자연산 모짜렐라 치즈와 고소한 베이컨이 만나 풍부한 맛의 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "리아 불고기 더블(빅불)",
+    "price": "가격 없음",
+    "description": "불고기패티 2장으로 더 진하고 더 커진 빅 불고기버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "더블 미라클버거",
+    "price": "가격 없음",
+    "description": "100% 식물성 패티와 신선한 야채들이 조화된 대체육버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "더블엑스투버거",
+    "price": "가격 없음",
+    "description": "비프패티2장, 치즈2장으로 깊고 풍부한맛의 정통 아메리칸버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "핫크리스피치킨버거",
+    "price": "가격 없음",
+    "description": "닭가슴살 패티로 만든 매콤 화끈한 프리미엄 치킨버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "리아 사각새우 더블",
+    "price": "가격 없음",
+    "description": "미니새우패티 2장의 새우 매니아를 위한버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "미라클버거",
+    "price": "가격 없음",
+    "description": "100% 식물성 패티와 신선한 야채들이 조화된 대체육버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "클래식치즈버거",
+    "price": "가격 없음",
+    "description": "비프와 치즈 본연의 맛에 딜향의 피클이 조화된 클래식 치즈버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "리아 불고기",
+    "price": "가격 없음",
+    "description": "두툼한 쇠고기패티와 한국적인 맛의 소스가 잘 조화된 롯데리아 대표 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "리아 새우",
+    "price": "가격 없음",
+    "description": "새우살을 가득넣어 더 맛있어진 오리지널 새우버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "티렉스버거",
+    "price": "가격 없음",
+    "description": "빵보다 큰 쫄깃한 통닭다리살 패티와 부드러운 크림 소스의 만남",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "치킨버거",
+    "price": "가격 없음",
+    "description": "닭고기 패티와 데리야끼 소스로 만든 담백하고 달콤한 맛의 치킨버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "데리버거",
+    "price": "가격 없음",
+    "description": "쇠고기패티에 달콤 짭짤한 데리소스를 더한 가성비 버거",
+    "type": "place_section",
+    "brand": "롯데리아"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "크리스퍼 클래식",
+    "price": "가격 없음",
+    "description": "Chicken Lover's Burger, Krispper",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "크리미 할라피뇨 파퍼 세트",
+    "price": "가격 없음",
+    "description": "크리미 할라피뇨 파퍼+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "치폴레 할라피뇨 파퍼 세트",
+    "price": "가격 없음",
+    "description": "치폴레 할라피뇨 파퍼+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "오리지널스 메이플 갈릭 세트",
+    "price": "가격 없음",
+    "description": "오리지널스 메이플 갈릭+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "오리지널스 뉴욕 스테이크 세트",
+    "price": "가격 없음",
+    "description": "오리지널스 뉴욕 스테이크+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "크리스퍼 클래식",
+    "price": "가격 없음",
+    "description": "Chicken Lover's Burger, Krispper",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "크리스퍼 클래식 세트",
+    "price": "가격 없음",
+    "description": "크리스퍼 클래식+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "크리스퍼 클래식 BLT",
+    "price": "가격 없음",
+    "description": "Chicken Lover's Burger, Krispper",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "크리스퍼 클래식 BLT 세트",
+    "price": "가격 없음",
+    "description": "크리스퍼 클래식 BLT+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "불끈버거 맥시멈",
+    "price": "가격 없음",
+    "description": "먹으면 불끈 힘이 나는, 불 끈 영웅들의 버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "불끈버거 맥시멈 세트",
+    "price": "가격 없음",
+    "description": "불끈버거 맥시멈+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "불끈버거 맥시멈 더블",
+    "price": "가격 없음",
+    "description": "먹으면 불끈 힘이 나는, 불 끈 영웅들의 버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "불끈버거 맥시멈 더블 세트",
+    "price": "가격 없음",
+    "description": "불끈버거 맥시멈 더블+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "불맛 더블치즈앤베이컨버거 세트",
+    "price": "가격 없음",
+    "description": "불맛이 만든 맛의 격차, 더 강렬해진 불맛에 베이컨까지",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "베이컨치즈와퍼 세트",
+    "price": "가격 없음",
+    "description": "풍미 가득한 아메리칸 클래식의 완벽한 조화",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "몬스터와퍼 세트",
+    "price": "가격 없음",
+    "description": "디아블로 소스의 매콤함, 불에 직접 구운 100% 순쇠고기 패티와 치킨패티까지 압도적 크기의 몬스터와퍼",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "불맛 더블치즈버거 세트",
+    "price": "가격 없음",
+    "description": "불맛이 만든 맛의 격차, 더 강렬해진 불맛이 더해진 치즈버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "콰트로치즈와퍼 세트",
+    "price": "가격 없음",
+    "description": "콰트로치즈와퍼+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "통새우와퍼세트",
+    "price": "가격 없음",
+    "description": "입안에서 톡톡 터지는 통새우가 매콤한 스파이시 토마토소스와 100% 순쇠고기 패티를 만나 완성한 통새우와퍼",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "치즈와퍼 세트",
+    "price": "가격 없음",
+    "description": "불에 직접 구운 순쇠고기 패티가 들어간 와퍼에 아메리칸 치즈까지, 치즈와퍼",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "갈릭불고기와퍼 세트",
+    "price": "가격 없음",
+    "description": "갈릭불고기와퍼+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "와퍼 세트",
+    "price": "가격 없음",
+    "description": "리얼 와퍼 + 프렌치프라이R + 콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "불고기와퍼세트",
+    "price": "가격 없음",
+    "description": "불고기와퍼+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "몬스터 주니어 세트",
+    "price": "가격 없음",
+    "description": "순 쇠고기 패티에 치킨 패티를 더해 든든함이 두 배",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "통새우와퍼주니어세트",
+    "price": "가격 없음",
+    "description": "불맛 가득 순쇠고기, 탱글한 통새우, 매콤한 스파이시토마토소스가 더해진 통새우와퍼주니어",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "콰트로치즈와퍼주니어세트",
+    "price": "가격 없음",
+    "description": "네가지 고품격 치즈와 100% 순쇠고기 패티의 만남, 작지만 꽉 찬 콰트로치즈와퍼주니어",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "치즈와퍼주니어세트",
+    "price": "가격 없음",
+    "description": "불에 직접 구운 100% 순쇠고기 패티에 고소한 치즈까지, 치즈와퍼주니어",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "와퍼주니어세트",
+    "price": "가격 없음",
+    "description": "불에 직접 구운 100% 순쇠고기 패티가 들어 작지만 꽉 찼다. 와퍼주니어",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "불고기와퍼주니어세트",
+    "price": "가격 없음",
+    "description": "불고기와퍼주니어+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "불맛 더블치즈버거 주니어 세트",
+    "price": "가격 없음",
+    "description": "불맛이 만든 맛의 격차, 더 강렬해진 불맛이 더해진 치즈버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "롱치킨버거 세트",
+    "price": "가격 없음",
+    "description": "롱치킨버거+프렌치프라이R+콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "더블비프불고기버거 세트",
+    "price": "가격 없음",
+    "description": "달콤한 불고기 소스에 더블 패티로 더욱 깊어진 감칠맛",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "치킨킹 세트",
+    "price": "가격 없음",
+    "description": "스파이시한 통닭다리살과 고소한 브리오쉬번이 만나 더 풍부해진 프리미엄 치킨버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "치킨킹BLT 세트",
+    "price": "가격 없음",
+    "description": "스파이시한 통닭다리살과 프리미엄 치킨버거에 베이컨, 양상추, 토마토를 더했다",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "비프불고기버거 세트",
+    "price": "가격 없음",
+    "description": "불고기소스와 불맛 가득 100% 순쇠고기 패티의 감칠맛 나는 조화",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "비프 & 슈림프버거 세트",
+    "price": "가격 없음",
+    "description": "불맛 가득 순쇠고기 패티에 새콤달콤 소스가 듬뿍",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "통새우 슈림프버거 세트",
+    "price": "가격 없음",
+    "description": "통통한 통새우에 새콤달콤 소스 듬뿍",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "슈림프버거 세트",
+    "price": "가격 없음",
+    "description": "탱글한 새우패티에 새콤달콤 소스 둠뿍",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "치킨버거 세트",
+    "price": "가격 없음",
+    "description": "킹치킨버거+프렌치프라이R+코카콜라R",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "치즈버거 세트",
+    "price": "가격 없음",
+    "description": "100% 순쇠고기 패티와 사르르 치즈까지, 작지만 알차다. 치즈버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "불맛 더블치즈앤베이컨버거",
+    "price": "가격 없음",
+    "description": "불맛이 만든 맛의 격차, 더 강렬해진 불맛에 베이컨까지",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "불맛 더블치즈버거",
+    "price": "가격 없음",
+    "description": "불맛이 만든 맛의 격차, 더 강렬해진 불맛이 더해진 치즈버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "콰트로치즈와퍼 단품",
+    "price": "가격 없음",
+    "description": "네가지 고품격 치즈와 100% 순쇠고기 패티로 탄생한 버거킹의 스테디 셀러, 콰트로치즈와퍼",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "와퍼",
+    "price": "가격 없음",
+    "description": "불에 직접 구운 순쇠고기 패티에 싱싱한 야채가 한가득, 버거킹의 대표메뉴, 와퍼",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 8",
+    "name": "불맛 더블치즈버거 주니어",
+    "price": "가격 없음",
+    "description": "불맛이 만든 맛의 격차, 더 강렬해진 불맛이 더해진 치즈버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "롱치킨버거",
+    "price": "가격 없음",
+    "description": "담백한 치킨 패티에 부드러운 마요네즈 소스와 싱싱한 야채가 듬뿍",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "더블비프불고기버거",
+    "price": "가격 없음",
+    "description": "달콤한 불고기 소스에 더블 패티로 더욱 깊어진 감칠맛",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "치킨킹",
+    "price": "가격 없음",
+    "description": "스파이시한 통닭다리살과 고소한 브리오쉬번이 만나 더 풍부해진 프리미엄 치킨버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "치킨킹BLT",
+    "price": "가격 없음",
+    "description": "스파이시한 통닭다리살과 프리미엄 치킨버거에 베이컨, 양상추, 토마토를 더했다",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "비프불고기버거",
+    "price": "가격 없음",
+    "description": "불고기소스와 불맛 가득 100% 순쇠고기 패티의 감칠맛 나는 조화",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "비프 & 슈림프버거",
+    "price": "가격 없음",
+    "description": "불맛 가득 순쇠고기 패티에 새콤달콤 소스가 듬뿍",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "통새우 슈림프버거",
+    "price": "가격 없음",
+    "description": "통통한 통새우에 새콤달콤 소스 듬뿍",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "슈림프버거",
+    "price": "가격 없음",
+    "description": "탱글한 새우패티에 새콤달콤 소스 둠뿍",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "치킨버거",
+    "price": "가격 없음",
+    "description": "부드러운 에그번과 두툼한 킹치킨패티의 만남, 풍부한 마요 소스로 고소하게, 킹치킨버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "치즈버거",
+    "price": "가격 없음",
+    "description": "100% 순쇠고기 패티와 사르르 치즈까지, 작지만 알차다. 치즈버거",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 10",
+    "name": "프렌치프라이(L)",
+    "price": "가격 없음",
+    "description": "세계최고의 감자만 엄선해서 버거킹만의 비법으로 바삭하게, 프렌치프라이",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 10",
+    "name": "프렌치프라이(R)",
+    "price": "가격 없음",
+    "description": "세계최고의 감자만 엄선해서 버거킹만의 비법으로 바삭하게, 프렌치프라이",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 11",
+    "name": "아메리카노",
+    "price": "가격 없음",
+    "description": "자연을 담은 버거킹 RA인증커피",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 11",
+    "name": "아이스 아메리카노",
+    "price": "가격 없음",
+    "description": "자연을 담은 버거킹 RA인증커피",
+    "type": "place_section",
+    "brand": "버거킹"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "한입강정 SET(실속)",
+    "price": "가격 없음",
+    "description": "버거운치킨버거+강정(소)+콜라1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "[믿고먹는]한입버거운 버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "[맛찾사]달콤비프치즈베이크 세트(세트)",
+    "price": "가격 없음",
+    "description": "치즈베이크 단품(100%자연치즈) + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "싱글통다리 세트(실속)",
+    "price": "가격 없음",
+    "description": "후라이드통닭다리(국내산)+ 버거운치킨버거+ 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "[다이어트.프로틴UP]에그마요휠렛버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "[닭날개를 통으로]한입메가윙 세트(실속)",
+    "price": "가격 없음",
+    "description": "후라이드 메가윙(국내산)or자메이카 메가윙(국내산)+ 버거운치킨버거 + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "싱글통다리 세트(실속)",
+    "price": "가격 없음",
+    "description": "후라이드통닭다리(국내산)+ 버거운치킨버거+ 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "[나는둘]커플통다리 세트(실속)",
+    "price": "가격 없음",
+    "description": "버거운치킨버거 + 육즙가득비프버거 + 후라이드통닭다리(국내산) + 음료 2잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "[닭날개를 통으로]한입메가윙 세트(실속)",
+    "price": "가격 없음",
+    "description": "후라이드 메가윙(국내산)or자메이카 메가윙(국내산)+ 버거운치킨버거 + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "버거운패밀리 세트(실속)",
+    "price": "가격 없음",
+    "description": "버거운치킨버거 2개 + 육즙가득비프버거 1개 + 후라이드치킨반마리(국내산)+ 음료 1.25",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "한입강정 SET(실속)",
+    "price": "가격 없음",
+    "description": "버거운치킨버거+강정(소)+콜라1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "한입치킨 SET(실속)",
+    "price": "가격 없음",
+    "description": "버거운치킨버거+후라이드치킨반마리(국내산)+콜라1잔 + 양념소스1통",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "한입순살치킨 SET(실속)",
+    "price": "가격 없음",
+    "description": "버거운치킨버거 + 순살치킨반마리 + 음료1잔 + 양념소스 1통",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "[1인]한입치즈베이크 SET(실속)",
+    "price": "가격 없음",
+    "description": "달콤비프치즈베이크 + 케이준순살강정(소)+ 콜라1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "[잘될꺼야]하이파이브 SET",
+    "price": "가격 없음",
+    "description": "버거운치킨버거 5개 + 콜라 1.25",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[다이어트.프로틴UP]에그마요휠렛버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "불찡어버거 세트",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "오찡어버거 세트",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[푸짐푸짐]비프해쉬버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[한입좌]불닭치즈카츠버거(불닭소스) 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[치즈킹]블랙치즈카츠버거(블랙패퍼) 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "딥치즈치킨버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소)+ 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "버거운치킨버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[믿고먹는]한입버거운 버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "육즙가득비프버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "베이컨치즈비프버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[맛있게맵다]핫치킨버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "화이트어니언치킨버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[마늘쏘스]갈릭마요치킨버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[치즈스노윙]스노우치킨버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "양념치킨버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "데리마요치킨버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "불새버거(와사마요) 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품+감자(소)+음료1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "베이컨치즈불새버거(와사마요) 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[왕]불고기버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "[왕]더블불고기버거 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "쉬림프플러스버거(와사마요) 세트(세트)",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "(NEW)칠리마요치킨버거 세트",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "(NEW)칠리크런치버거 세트",
+    "price": "가격 없음",
+    "description": "버거단품 + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "불고기콤보 세트",
+    "price": "가격 없음",
+    "description": "",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "(NEW)베이컨에그치즈베이크 세트(세트)",
+    "price": "가격 없음",
+    "description": "치즈베이크 단품(100%자연치즈) + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "(NEW)휠렛불갈비치즈베이크 세트(세트)",
+    "price": "가격 없음",
+    "description": "치즈베이크 단품(100%자연치즈) + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "[맛찾사]달콤비프치즈베이크 세트(세트)",
+    "price": "가격 없음",
+    "description": "치즈베이크 단품(100%자연치즈) + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "매콤치킨치즈베이크 세트(세트)",
+    "price": "가격 없음",
+    "description": "치즈베이크 단품(100%자연치즈) + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "쉬림프치즈베이크 세트(세트)",
+    "price": "가격 없음",
+    "description": "치즈베이크 단품(100%자연치즈) + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "소시지치즈베이크 세트(세트)",
+    "price": "가격 없음",
+    "description": "치즈베이크 단품(100%자연치즈) + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "콘치즈베이크 세트(세트)",
+    "price": "가격 없음",
+    "description": "치즈베이크 단품(100%자연치즈) + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "풀치즈베이크 세트(세트)",
+    "price": "가격 없음",
+    "description": "치즈베이크 단품(100%자연치즈) + 감자(소) + 음료 1잔",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "[다이어트.프로틴틴UP]에그마요휠렛버거(단품)",
+    "price": "가격 없음",
+    "description": "훈제 닭가슴살 슬라이스 + 에그스프레드",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "불찡어버거",
+    "price": "가격 없음",
+    "description": "불고기 패티 + 오징어 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "오찡어버거",
+    "price": "가격 없음",
+    "description": "오징어 패티 + 오징어링 2pc",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "비프해쉬버거",
+    "price": "가격 없음",
+    "description": "육즙 가득한 비프 패티 + 파인애플 + 해쉬브라운",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "[한입좌]불닭치즈카츠버거(불닭소스)",
+    "price": "가격 없음",
+    "description": "카츠패티 + 매콤 치킨 패티 + 불닭소스",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "블랙치즈카츠버거 (블랙패퍼)",
+    "price": "가격 없음",
+    "description": "카츠패티 + 블랙페퍼소스",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "딥치즈치킨버거",
+    "price": "가격 없음",
+    "description": "치즈소스 + 매콤한 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "버거운치킨버거(단품)",
+    "price": "가격 없음",
+    "description": "버거소스 + 매콤한 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "[믿고먹는]한입버거운 버거(단품)",
+    "price": "가격 없음",
+    "description": "매콤 치킨 패티 + 육즙 가득한 비프 패티 1/2 + 매콤한 새우살 + 베이컨 +치즈 +구운 파인애플",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "육즙가득비프버거(단품)",
+    "price": "가격 없음",
+    "description": "육즙 가득한 비프 패티 + 파인애플",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "베이컨치즈비프버거(단품)",
+    "price": "가격 없음",
+    "description": "육즙 가득한 비프 패티 + 파인애플 + 치즈 + 베이컨",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "[맛있게맵다]핫치킨버거(단품)",
+    "price": "가격 없음",
+    "description": "스리라차마요소스 + 핫소스 + 매콤한 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "화이트어니언치킨버거(단품)",
+    "price": "가격 없음",
+    "description": "화이트 소스 + 어니언 듬뿍 + 베이컨 + 치즈 + 매콤한 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "갈릭마요치킨버거(단품)",
+    "price": "가격 없음",
+    "description": "갈릭소스 + 베이컨 + 치즈 + 매콤한 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "스노우치킨버거(단품)",
+    "price": "가격 없음",
+    "description": "달콤 짭짤한 스노우가루 + 매콤한 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "양념치킨버거(단품)",
+    "price": "가격 없음",
+    "description": "달콤한 양념치킨소스 + 매콤한 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "데리마요치킨버거(단품)",
+    "price": "가격 없음",
+    "description": "특제 간장 소스 + 마요네즈 + 매콤 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "불새버거(와사마요)(단품)",
+    "price": "가격 없음",
+    "description": "불고기패티 + 통새우패티 + 와사마요소스 + 스리라차소스",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "베이컨치즈불새버거(와사마요)(단품)",
+    "price": "가격 없음",
+    "description": "불고기패티 + 통새우패티 + 와사마요소스 + 스리라차소스 + 베이컨 +치즈",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "[왕]불고기버거(단품)",
+    "price": "가격 없음",
+    "description": "불고기 패티 + 달콤한불갈비소스",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "[왕]더블불고기버거(단품)",
+    "price": "가격 없음",
+    "description": "불고기패티 X 2 + 체다치즈 + 달콤한불갈비소스",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "쉬림프플러스버거(와사마요)(단품)",
+    "price": "가격 없음",
+    "description": "통새우패티 + 새우살 3pc + 와사마요소스 + 스리라차소스",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "(NEW)칠리마요치킨버거",
+    "price": "가격 없음",
+    "description": "달콤한 칠리마요소스 + 매콤한 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "(NEW)칠리크런치버거",
+    "price": "가격 없음",
+    "description": "달콤한 칠리마요소스 + 바삭한 해쉬브라운 + 매콤한 치킨 패티",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 9",
+    "name": "스리라차소스 1통(1통)",
+    "price": "가격 없음",
+    "description": "버거운버거의 특제 소스 (매콤한 마요소스)",
+    "type": "place_section",
+    "brand": "버거운버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "바질 에그마요 버거세트",
+    "price": "7,400원",
+    "description": "바질 에그마요 버거 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "통마늘 베이컨 버거세트",
+    "price": "7,600원",
+    "description": "통마늘 베이컨 버거 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "여기어때 클럽 샌드위치 버거 패키지",
+    "price": "8,900원",
+    "description": "여기어때 클럽 샌드위치 버거 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "여기어때 클럽 샌드위치 버거",
+    "price": "7,000원",
+    "description": "불맛 패티와 NBB만의 허니 스모크 소스에 닭가슴살, 오버이지, 베이컨, 치즈까지 든든한 프로틴이 가득 풍부함과 풍성함을 동시에 느낄 수 있는 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "NBB 어메이징 더블 버거세트",
+    "price": "6,400원",
+    "description": "NBB 어메이징 더블 버거 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "NBB 어메이징 더블 업 세트",
+    "price": "7,900원",
+    "description": "NBB 어메이징 더블 업 버거 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "더블치즈 베이컨 시그니처 세트",
+    "price": "7,600원",
+    "description": "더블치즈 베이컨 시그니처 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "메가바이트 세트",
+    "price": "7,100원",
+    "description": "메가바이트 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "메가바이트 레드 세트",
+    "price": "7,100원",
+    "description": "메가바이트 레드 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "코울슬로치킨 버거세트",
+    "price": "7,000원",
+    "description": "코울슬로치킨 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "시그니처 세트",
+    "price": "6,800원",
+    "description": "시그니처 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "더블 그릴드 불고기 세트",
+    "price": "6,600원",
+    "description": "더블 그릴드 불고기 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "치폴레 핫치킨 세트",
+    "price": "6,100원",
+    "description": "치폴레 핫치킨 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "오리지널 세트",
+    "price": "6,000원",
+    "description": "오리지널 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "갈릭앤갈릭 세트",
+    "price": "5,900원",
+    "description": "갈릭앤갈릭 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "그릴드불고기 세트",
+    "price": "5,100원",
+    "description": "그릴드불고기 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "치즈 버거세트",
+    "price": "4,700원",
+    "description": "치즈 버거 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "오리지널 새우 세트",
+    "price": "6,800원",
+    "description": "오리지널 새우 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "비스크 치즈 새우 세트",
+    "price": "7,500원",
+    "description": "비스크 치즈 새우 + 감자튀김(M) + 브랜드 캔콜라(355ml)",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "오리지널 새우",
+    "price": "4,900원",
+    "description": "탱글한 새우 패티에 NBB 특제 소스가 어우러진 오리지널 새우버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "비스크 치즈 새우",
+    "price": "5,600원",
+    "description": "갑각류의 진한 풍미 가득 비스크 소스에 탱글한 새우패티, 그리고 고소한 아메리칸 치즈가 더해진 한정판 새우버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "트리플베이컨 버거",
+    "price": "6,500원",
+    "description": "향긋한 허브의 풍미를 입혀 훈연한 삼겹 베이컨 3장에 아메리칸 치즈 2장이 더해진 풍성한 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "미트마니아",
+    "price": "6,500원",
+    "description": "고기에 의한, 고기를 위한 버거. 더블패티에 더블치즈, 트러플 페퍼소스에 반숙란까지!",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "멕시칸 칠리 치즈 버거",
+    "price": "6,200원",
+    "description": "진한 고기의 맛과 매콤한 이국적인 멕시칸 풍미를 느낄 수 있는 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "바질 에그마요 버거",
+    "price": "5,500원",
+    "description": "직화 미트패티에 향긋한 바질마요, 고소한 에그마요가 더해진 풍부함 극대화 바질 에그마요",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "더블치즈 베이컨 시그니처",
+    "price": "5,700원",
+    "description": "베이컨과 더블치즈가 만나 스모크한 풍미와？고소함이？더해진 아메리칸 클래식？버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "메가바이트",
+    "price": "5,200원",
+    "description": "바삭한 해쉬브라운이 더해져 색다른 식감과 풍성한 양을 자랑하는 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "메가바이트 레드",
+    "price": "5,200원",
+    "description": "바삭한 해쉬브라운이 더해져 색다른 식감과 풍성한 양을 자랑하는 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "코울슬로치킨",
+    "price": "5,100원",
+    "description": "바삭하게 튀긴 통가슴살 치킨패티에 아삭한 식감이 살아 있는 달콤한 코울슬로를 더한 치킨버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "더블 그릴드 불고기 버거",
+    "price": "4,600원",
+    "description": "두툼한 직화 미트 패티 2장에 불고기 소스가 더해져 맛도 2배! 가성비도 2배!",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "NBB 어메이징 더블 버거",
+    "price": "4,500원",
+    "description": "더 강력해진 불 맛 패티 2장에 치즈, 비법 소스가 더해져 어메이징한 맛의 NBB 대표 메뉴",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "시그니처",
+    "price": "5,000원",
+    "description": "불맛을 살린 두툼한 미트 패티에 진한 치즈를 더해 깊은 맛을 선사하는 시그니처 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "치폴레 핫치킨",
+    "price": "4,200원",
+    "description": "매콤한 치킨 패티에 치폴레소스가 더해진 크리스피 핫 치킨 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "오리지널",
+    "price": "4,100원",
+    "description": "두툼한 직화 미트패티에 신선한 양상추, 토마토와 특제소스를 더한 오리지널 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "갈릭앤갈릭",
+    "price": "3,900원",
+    "description": "갈릭칩과 갈릭사워소스가 어우러져 갈릭의 풍부한 마늘의 풍미를 합리적인 가격으로 즐길 수 있는 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "그릴드불고기",
+    "price": "3,100원",
+    "description": "두툼한 직화 미트패티에 불고기 소스를 더한 최고의 가성비 버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "치즈 버거",
+    "price": "2,500원",
+    "description": "촉촉한 번에 육즙 가득 미트 패티, 아메리칸 치즈와 비법 소스가 만나 치즈 풍미 가득한 가성비 끝판왕 치즈버거",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 8",
+    "name": "그린샐러드 미니",
+    "price": "2,300원",
+    "description": "기존 그린샐러드 대비 1/2 중량으로 버거와 함께 더욱 가볍게 즐길 수 있는 미니 샐러드",
+    "type": "naver_order",
+    "brand": "노브랜드버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "(NEW)치즈도넛비프버거세트",
+    "price": "가격 없음",
+    "description": "꽉찬 모짜렐라 치즈도넛에 크리미한 바질소스와 발사믹소스의 풍미가 진한 스페셜 대표 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "(NEW)어니언탑비프버거세트",
+    "price": "가격 없음",
+    "description": "바삭한 양파링과 딜샤워크림의 허브향을 더해 곡물번의 풍미까지 어우러진 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "(NEW)해쉬비프버거세트",
+    "price": "가격 없음",
+    "description": "바삭한 해쉬포테이토에 바질 풍미와 달콤새콤한 이탈리안 발사믹소스가 어우러진 클래식 모던 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "(NEW)크리스피카츠버거세트",
+    "price": "가격 없음",
+    "description": "멘치카츠 패티를 겉은 바삭하게 튀겨 속은 육즙을 한가득 품고 있어 진한 육즙 패티를 느낄 수 있는 스페셜 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "치즈버거세트",
+    "price": "가격 없음",
+    "description": "대표메뉴로서 100% 수제패티와 체다 치즈의 깊은 풍미를 이룬 시그니처 버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "머쉬룸크림스테이크버거세트",
+    "price": "가격 없음",
+    "description": "양송이, 새송이 버섯에 로스트 버섯 크림이 더해진 풍부한 버섯향과 소고기의 진한 풍미가 가득한 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "(NEW)치즈도넛비프버거세트",
+    "price": "가격 없음",
+    "description": "꽉찬 모짜렐라 치즈도넛에 크리미한 바질소스와 발사믹소스의 풍미가 진한 스페셜 대표 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "(NEW)어니언탑비프버거세트",
+    "price": "가격 없음",
+    "description": "바삭한 양파링과 딜샤워크림의 허브향을 더해 곡물번의 풍미까지 어우러진 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "(NEW)해쉬비프버거세트",
+    "price": "가격 없음",
+    "description": "바삭한 해쉬포테이토에 바질 풍미와 달콤새콤한 이탈리안 발사믹소스가 어우러진 클래식 모던 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "(NEW)크리스피카츠버거세트",
+    "price": "가격 없음",
+    "description": "멘치카츠 패티를 겉은 바삭하게 튀겨 속은 육즙을 한가득 품고 있어 진한 육즙 패티를 느낄 수 있는 스페셜 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "(NEW)치즈도넛비프버거",
+    "price": "가격 없음",
+    "description": "꽉찬 모짜렐라 치즈도넛에 크리미한 바질소스와 발사믹소스의 풍미가 진한 스페셜 대표 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "(NEW)어니언탑비프버거",
+    "price": "가격 없음",
+    "description": "바삭한 양파링과 딜샤워크림의 허브향을 더해 곡물번의 풍미까지 어우러진 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "(NEW)해쉬비프버거",
+    "price": "가격 없음",
+    "description": "바삭한 해쉬포테이토에 바질 풍미와 달콤새콤한 이탈리안 발사믹소스가 어우러진 클래식 모던 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "(NEW)크리스피카츠버거",
+    "price": "가격 없음",
+    "description": "멘치카츠 패티를 겉은 바삭하게 튀겨 속은 육즙을 한가득 품고 있어 진한 육즙 패티를 느낄 수 있는 스페셜 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "프랭크버거팩(자이언트통닭다리)",
+    "price": "가격 없음",
+    "description": "자이언트통닭다리(1)+햄버거(택1)+사이드메뉴(택1)",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "청양마요쉬림프버거세트",
+    "price": "가격 없음",
+    "description": "청양마요소스와 탱글탱글한 새우 패티가 어우러져 새우의 풍미가 깔끔한 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "머쉬룸크림스테이크버거세트",
+    "price": "가격 없음",
+    "description": "양송이, 새송이 버섯에 로스트 버섯 크림이 더해진 풍부한 버섯향과 소고기의 진한 풍미가 가득한 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "매콤양념치킨버거세트",
+    "price": "가격 없음",
+    "description": "매콤한 하바네로 소스와 바삭한 치킨이 입맛을 자극하고 신선한 채소가 어우러진 강렬한 맛의 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "K불고기버거세트(Regular)",
+    "price": "가격 없음",
+    "description": "전통 궁중식 너비아니 스타일의 패티에 불고기양념을 가미한 한국의 대표 불고기버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "K핫불고기버거세트(Regular)",
+    "price": "가격 없음",
+    "description": "매콤한 특제소스로 한국 특유의 매운맛을 살린 화끈한 불고기버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "프랭크버거세트",
+    "price": "가격 없음",
+    "description": "육즙 가득한 수제패티와 신선한 야채가 잘 어우러져 기본에 충실한 미국 동부식 오리지날버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "쉬림프버거세트(Regular)",
+    "price": "가격 없음",
+    "description": "탱탱한 새우가 들어간 새우패티를 바삭하게 튀겨 새콤달콤한 특제소스와 조화를 이룬 프리미엄 새우 버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "치즈버거세트",
+    "price": "가격 없음",
+    "description": "대표메뉴로서 100% 수제패티와 체다 치즈의 깊은 풍미를 이룬 시그니처 버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "크리스피치킨버거세트(Regular)",
+    "price": "가격 없음",
+    "description": "겉은 바삭하고 속은 육즙가득한 닭다리살 치킨패티에 신선한 야채를 더한 오리지널 치킨 버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "베이컨치즈버거세트",
+    "price": "가격 없음",
+    "description": "수제패티에 하와이안 스타일의 구운 파인애플과 베이컨의 조화를 이룬 스페셜 버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "더블비프치즈버거세트",
+    "price": "가격 없음",
+    "description": "더블패티에 생양파와 피클을 더해 미국식 수제버거의 풍미를 최상으로 느낄 수 있는 버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "비프앤쉬림프버거세트(Regular)",
+    "price": "가격 없음",
+    "description": "탱탱한 새우가 들어간 새우 패티와 소고기패티의 육향이 절묘하게 조화를 이룬 프리미엄 버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "JG버거세트",
+    "price": "가격 없음",
+    "description": "정통 아메리칸 스타일의 구운 베이컨에 꾸덕한 치즈소스가 듬뿍 들어가 풍만함이 최상인 마지막 종결버거 세트",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "청양마요쉬림프버거",
+    "price": "가격 없음",
+    "description": "청양마요소스와 탱글탱글한 새우 패티가 어우러져 새우의 풍미가 깔끔한 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "머쉬룸크림스테이크버거",
+    "price": "가격 없음",
+    "description": "양송이, 새송이 버섯에 로스트 버섯 크림이 더해진 풍부한 버섯향과 소고기의 진한 풍미가 가득한 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "매콤양념치킨버거",
+    "price": "가격 없음",
+    "description": "매콤한 하바네로 소스와 바삭한 치킨이 입맛을 자극하고 신선한 채소가 어우러진 강렬한 맛의 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "K불고기버거(Regular)",
+    "price": "가격 없음",
+    "description": "전통 궁중식 너비아니 스타일의 패티에 불고기양념을 가미한 한국의 대표 불고기버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "K핫불고기버거(Regular)",
+    "price": "가격 없음",
+    "description": "매콤한 특제소스로 한국 특유의 매운맛을 살린 화끈한 불고기버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "[수제버거]프랭크버거",
+    "price": "가격 없음",
+    "description": "육즙 가득한 수제패티와 신선한 야채가 잘 어우러져 기본에 충실한 미국 동부식 오리지날버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "쉬림프버거(Regular)",
+    "price": "가격 없음",
+    "description": "탱탱한 새우가 들어간 새우패티를 바삭하게 튀겨 새콤달콤한 특제소스와 조화를 이룬 프리미엄 새우 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "치즈버거",
+    "price": "가격 없음",
+    "description": "대표메뉴로서 100% 수제패티와 체다 치즈의 깊은 풍미를 이룬 시그니처 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "크리스피치킨버거(Regular)",
+    "price": "가격 없음",
+    "description": "겉은 바삭하고 속은 육즙가득한 닭다리살 치킨패티에 신선한 야채를 더한 오리지널 치킨 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "베이컨치즈버거",
+    "price": "가격 없음",
+    "description": "수제패티에 하와이안 스타일의 구운 파인애플과 베이컨의 조화를 이룬 스페셜 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "더블비프치즈버거",
+    "price": "가격 없음",
+    "description": "더블패티에 생양파와 피클을 더해 미국식 수제버거의 풍미를 최상으로 느낄 수 있는 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "비프앤쉬림프버거(Regular)",
+    "price": "가격 없음",
+    "description": "탱탱한 새우가 들어간 새우 패티와 소고기패티의 육향이 절묘하게 조화를 이룬 프리미엄 버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 5",
+    "name": "JG버거",
+    "price": "가격 없음",
+    "description": "정통 아메리칸 스타일의 구운 베이컨에 꾸덕한 치즈소스가 듬뿍 들어가 풍만함이 최상인 마지막 종결버거",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 6",
+    "name": "콘샐러드(1개)",
+    "price": "가격 없음",
+    "description": "스위트콘의 톡톡튀는 식감과 달콤하고 고소한 맛의 조화 버거와 함께 먹으면 너무 잘 어울리는 콘 샐러드",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "초코밀크쉐이크",
+    "price": "가격 없음",
+    "description": "꾸덕한 초코소스가 들어간 프랭크버거 초코쉐이크",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 7",
+    "name": "딸기밀크쉐이크",
+    "price": "가격 없음",
+    "description": "신선한 국내산 딸기가 79%나 들어간 프랭크버거 딸기쉐이크",
+    "type": "place_section",
+    "brand": "프랭크버거"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "버거 오리지널",
+    "price": "4,500원",
+    "description": "브리오쉬번 + 통다리살 치킨 패티 + 오리지널 소스 + 기본 채소 2종 (양파,피클) 통닭다리살 패티의 매력을 온전하게! 풍부하게! 고소한 마요네즈 특제 소스의 완벽 서포트!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "시그니처 세트",
+    "price": "8,900원",
+    "description": "통다리살 치킨 버거+메가윙 1윙스&감자튀김(1/2)+음료",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "버거 세트",
+    "price": "8,000원",
+    "description": "통다리살 치킨 버거 1종 + 감자튀김 + 음료",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "버거 & 메가윙 세트",
+    "price": "10,300원",
+    "description": "통다리살 치킨 버거 + 메가윙 2윙스 + 음료",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "시그니처팩",
+    "price": "13,800원",
+    "description": "버거 1종 + 메가윙1윙스 & 감자튀김 (1/2) + 블랙 치즈스틱 + 코울슬로 + 음료 1종 움버거앤윙스의 시그니처 메뉴를 한자리에 모았다!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "더블팩",
+    "price": "23,200원",
+    "description": "버거 2종 + 메가윙 2윙스 + 감자튀김 + 블랙 치즈스틱 + 코울슬로 + 음료 2종 푸짐한 구성! 버거&메가윙과 사이드까지 한 팩에 모두 담았다!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "메가윙매니아팩",
+    "price": "24,600원",
+    "description": "버거 1종 + 메가윙 6윙스 + 코울슬로 + 음료 2종 메가윙 매니아를 위한 팩! 국내산 통날개와 버거까지 팩으로 즐겨보세요!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "다채로um팩",
+    "price": "29,600원",
+    "description": "버거 2종 + 메가윙 2윙스 + 감자튀김 + 블랙 치즈스틱 + 해쉬브라운 + 코울슬로 + 지파이 + 음료 2종 버거&메가윙과 모든 사이드 메뉴까지 즐길 수 있는 파티팩으로 평범한 일상을 다채롭게!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "버거 세트",
+    "price": "8,000원",
+    "description": "통다리살 치킨 버거 1종 + 감자튀김 + 음료",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "시그니처 세트",
+    "price": "8,900원",
+    "description": "통다리살 치킨 버거+메가윙 1윙스&감자튀김(1/2)+음료",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "버거 & 메가윙 세트",
+    "price": "10,300원",
+    "description": "통다리살 치킨 버거 + 메가윙 2윙스 + 음료",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "버거 오리지널",
+    "price": "4,500원",
+    "description": "브리오쉬번 + 통다리살 치킨 패티 + 오리지널 소스 + 기본 채소 2종 (양파,피클) 통닭다리살 패티의 매력을 온전하게! 풍부하게! 고소한 마요네즈 특제 소스의 완벽 서포트!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "버거 핫 크리미매운맛1단계",
+    "price": "5,900원",
+    "description": "브리오쉬번 + 통다리살 치킨 패티 + 핫 크리미 소스 + 기본 채소 4종 (양파, 피클, 토마토, 청상추) 매콤한 청고추와 부드러운 마요네즈의 매콤고소한 만남!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "버거 스파이시 로제매운맛2단계",
+    "price": "5,900원",
+    "description": "브리오쉬번 + 통다리살 치킨 패티 + 스파이시 로제 소스 + 기본 채소 4종 (양파, 피클, 토마토, 청상추) 고소한 크림소스의 매콤한 변신! 은은하고 부드러운 로제빛 매콤함!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "버거 버팔로매운맛3단계",
+    "price": "5,900원",
+    "description": "브리오쉬번 + 통다리살 치킨 패티 + 버팔로 소스 + 코울슬로 샐러드 + 기본 채소 2종 (양파, 피클) 아는 맛이 무섭다! 부드럽게 톡쏘는 버팔로 소스의 짜릿한 매콤함!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "버거 소이갈릭",
+    "price": "5,900원",
+    "description": "브리오쉬번 + 통다리살 치킨 패티 + 소이갈릭 소스 + 코울슬로 샐러드 + 기본 채소 2종 (양파, 피클) 마늘 풍미 품은 특제 간장 소스가 선사하는 진리의 단짠조합!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 4",
+    "name": "버거 핫 레드매운맛3단계",
+    "price": "5,900원",
+    "description": "브리오쉬번 + 통다리살 치킨 패티 + 핫 레드 소스 + 코울슬로 샐러드 + 기본 채소 2종 (양파, 피클) 중독성 있는 무한매력의 맵단 발란스!",
+    "type": "naver_order",
+    "brand": "움버거앤윙스"
+  },
+  {
+    "category": "카테고리 1",
+    "name": "(NEW) 크리스피 치킨버거",
+    "price": "6,700원",
+    "description": "신선한 토마토와 피클, 로메인을 통닭다리살 치킨패티에 곁들여 담백하고 프레쉬하게 즐기는 스탠다드 치킨버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "버거리버거",
+    "price": "6,900원",
+    "description": "신선한 야채,담백한 치즈,짭짤 바삭한 베이컨이 환상 밸런스를 이루는 시그니처 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "에그불고기버거",
+    "price": "6,300원",
+    "description": "신선한 반숙계란을 곁들인 소불고기버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "비프앤쉬림프버거",
+    "price": "8,700원",
+    "description": "싱싱한 통새우패티와 비프패티가 주는 새로움! 오직 버거리에서만 즐길 수 있는 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 2",
+    "name": "더블클래식치즈버거",
+    "price": "8,900원",
+    "description": "고기를 진정으로 사랑하는 자들은 오라! 아낌없이 주는 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "프레쉬버거",
+    "price": "4,900원",
+    "description": "'Simple is the best'의 철학이 담긴 버거리의 대표 가성비 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "소불고기버거",
+    "price": "5,200원",
+    "description": "버거리만의 엄격한 기준으로 만든 불고기 소스와 100% 소고기 패티의 조합! 버거리에서만 즐기는 프리미엄 로컬 버거!",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "쉬림프버거",
+    "price": "5,800원",
+    "description": "통새우패티의 탱글탱글한 식감이 살아있는 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "버거리버거",
+    "price": "6,900원",
+    "description": "신선한 야채,담백한 치즈,짭짤 바삭한 베이컨이 환상 밸런스를 이루는 시그니처 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "하와이안버거",
+    "price": "7,300원",
+    "description": "버거리버거에 하와이언 감성을 느낄 수 있는 달달한 파인애플을 추가한 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "핫치폴레버거",
+    "price": "7,300원",
+    "description": "구워 건조시킨 멕시코산 고추 소스가 들어가 얼얼하게 매운맛의 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "클래식치즈버거",
+    "price": "6,100원",
+    "description": "그릴드한 어니언과 두 장의 아메리칸 치즈가 주는 강한 풍미의 치즈버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "더블클래식치즈버거",
+    "price": "8,900원",
+    "description": "고기를 진정으로 사랑하는 자들은 오라! 아낌없이 주는 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "비프앤쉬림프버거",
+    "price": "8,700원",
+    "description": "싱싱한 통새우패티와 비프패티가 주는 새로움! 오직 버거리에서만 즐길 수 있는 버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "(NEW) 클래식 치킨버거",
+    "price": "6,400원",
+    "description": "통닭다리살 치킨패티에 버거리만의 특제 화이트&체다소스로 본연의 치킨 맛을 낸 오리지널 치킨버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "(NEW) 크리스피 치킨버거",
+    "price": "6,700원",
+    "description": "신선한 토마토와 피클, 로메인을 통닭다리살 치킨패티에 곁들여 담백하고 프레쉬하게 즐기는 스탠다드 치킨버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "에그불고기버거",
+    "price": "6,300원",
+    "description": "신선한 반숙계란을 곁들인 소불고기버거",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "에그베이컨버거",
+    "price": "7,900원",
+    "description": "신선한 반숙 계란과 소고기 패티, 치즈, 베이컨의 절묘한 조화",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "할라피뇨 치즈버거",
+    "price": "6,900원",
+    "description": "할리피뇨와 소고기 패티, 치즈소스, 베이컨의 절묘한 조화",
+    "type": "naver_order",
+    "brand": "버거리"
+  },
+  {
+    "category": "카테고리 3",
+    "name": "할라피뇨 더블치즈버거",
+    "price": "9,900원",
+    "description": "할리피뇨와 소고기 패티, 치즈소스, 베이컨의 절묘한 조화",
+    "type": "naver_order",
+    "brand": "버거리"
+  }
+]
