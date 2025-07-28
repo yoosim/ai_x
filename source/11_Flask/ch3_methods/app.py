@@ -45,3 +45,8 @@ def join():
 def update(name, id, pw, addr):
 	print(name)
 	return f"{name}님 정보가 수정되었습니다."
+
+@app.route("/delete/<id>", methods=["DELETE"])
+def delete(id):
+	# delete from 테이블명 where id = id를 전송해서 삭제 
+	return f"id가 {id}인 정보를 삭제했습니다."

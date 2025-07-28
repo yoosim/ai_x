@@ -1,4 +1,11 @@
 vscode로 가상환경 만들기 
 ctrl+j 터미널 열고 터미널에 작성 
+# pythoin -m venv .venv(가상환경 생성 방법1)
+# ctrl + shift + p => select interpreter => 가상환경 만들기 => .venv로 선택 => 인터프리터경로 입력
+# => 찾기(python.exe / 아나콘다 폴더에 있음) (가상환경 생성 방법2)
+# python -m pip install --upgrade pip install (1번 방법으로 했으면 설치해야함 / 2번 방법은 자동으로 실행 됨)
+# .venv\Scripts\activate (가상환경 접근)
+# pip install flask
+
 1) python -m venv .venv
 2) 파이썬 새파일 만들기 

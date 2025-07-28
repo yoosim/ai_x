@@ -1,0 +1,14 @@
+.ipynb_checkpoints/
+__pycache__
+.env
+data/
+project(신림동 짜장면)-data/
+신림동 짜장면_restaurant_data/
+data/
+<<<<<<< HEAD
+=======
+0709_데이터 폴더-카피본
+0709_데이터 폴더-카피본/
+필요x/
+필요x
+>>>>>>> d92742d6b955fadb4c2dfcfce442f00b317e984d
