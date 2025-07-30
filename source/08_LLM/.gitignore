@@ -1,2 +1,12 @@
 .ipynb_checkpoints/
 .env
+chroma/
+chroma
+chroma_upstage/
+chroma_upstage
+data/
+data
+images
+images/
+유성미_생성형ai
+유성미_생성형ai/
