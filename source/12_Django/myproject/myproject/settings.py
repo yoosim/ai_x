@@ -49,8 +49,8 @@ INSTALLED_APPS = [
     "blog",
     "accounts",
     "book",
-    "django.contrib.humanize", # intcomma(세자리마다 ,) 필터 사용,
-    "article", # GenericView 이용(paging처리), 파일첨부(ch08)
+    "django.contrib.humanize", # intcomma(세자리마다 ,) 필터 사용 
+    "article", # GenericView이용(paging처리), 파일첨부(ch08)
 ]
 
 MIDDLEWARE = [
@@ -77,6 +77,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "myproject.context_processors.myproject",
             ],
         },
     },
@@ -100,25 +101,28 @@ DATABASES = {
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-    },
+    # {
+    #     "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+    # },#다른 개인 정보와 유사한 비밀번호는 사용할 수 없습니다.
     {
         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
-    },
+        "OPTIONS": {
+            "min_length": 2,
+        },
+    }, # 비밀번호는 최소 2자 이상이어야 합니다.
+    # {
+    #     "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    # }, # 통상적으로 자주 사용되는 비밀번호는 사용할 수 없습니다.
+    # {
+    #     "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+    # }, # 숫자로만 이루어진 비밀번호는 사용할 수 없습니다.
 ]
 
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "ko-kr"
 
 TIME_ZONE = "UTC"
 
@@ -129,13 +133,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-#  개발환경
+# 개발 환경
 STATIC_URL = "static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'myproject', 'static'),
 ]
-
-#운영 환경 python manage.py collectstatic 실행(pt:18p)
+# 운영 환경 python manage.py collectstatic 실행(pt. 10)
 STATIC_ROOT = os.path.join(BASE_DIR, '_staticfiles')
 
 # Default primary key field type
@@ -144,8 +147,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, '_staticfiles')
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # https://github.com/django/django/blob/main/django/conf/global_settings.py
-# media파일의 url prefix / media / article / noImg-png
-MEDIA_URL = "/media/" 
-
-# 업로드한 파일이 저장될 폴더 -> 이미지 파일 지원하는 라이브러리 pip install pillow -> pip freeze > requirements.txt
-MEDIA_ROOT = os.path.join(BASE_DIR,"_media")
+# media파일의 url prefix /media/article/noImg.png
+MEDIA_URL = "/media/"
+# 업로드한 파일이 저장될 폴더 -> 이미지 파일 지원 라이브러리 pip install pillow->pip freeze > requirements.txt
+MEDIA_ROOT = os.path.join(BASE_DIR, "_media")

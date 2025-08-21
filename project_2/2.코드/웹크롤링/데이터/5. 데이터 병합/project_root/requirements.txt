@@ -1,0 +1,15 @@
+# RAG 검색 엔진 필수 패키지
+requests>=2.31.0
+pinecone-client>=3.0.0
+python-dotenv>=1.0.0
+
+# 추후 OpenAI 통합시 필요
+openai>=1.0.0
+
+# Django 연동시 필요  
+django>=4.2.0
+djangorestframework>=3.14.0
+
+# 개발/테스트용
+tqdm>=4.65.0
+pytest>=7.4.0
