@@ -1,0 +1,240 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>교통사고 협의서 작성</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{background:#f6f7fb}
+    .card{box-shadow:0 8px 24px rgba(0,0,0,.06); border:0}
+    .req::after{content:" *"; color:#d33; font-weight:700}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+    .section-title{font-weight:700; margin-top:8px}
+  </style>
+</head>
+<body class="py-4">
+<div class="container" style="max-width:960px">
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="m-0">교통사고 협의서 작성</h3>
+    <div>
+      <a href="{% url 'accident_project:mypage_agreements' %}" class="btn btn-outline-secondary btn-sm">마이페이지</a>
+      <a href="{% url 'accident_project:home' %}" class="btn btn-outline-secondary btn-sm">홈</a>
+    </div>
+  </div>
+
+  <form id="agreementForm" method="post" action="{% url 'accident_project:agreement_submit' %}">
+    {% csrf_token %}
+
+    <div class="card mb-3">
+      <div class="card-body grid-2">
+        <div>
+          <label class="form-label req">사고일시</label>
+          <input type="datetime-local" name="accident_date" class="form-control" required>
+        </div>
+        <div>
+          <label class="form-label req">사고장소</label>
+          <input type="text" name="location" class="form-control" required>
+        </div>
+        <div class="col-12">
+          <label class="form-label">날씨</label>
+          <div class="grid-3">
+            <label class="form-check"><input class="form-check-input" type="checkbox" name="weather" value="맑음"> 맑음</label>
+            <label class="form-check"><input class="form-check-input" type="checkbox" name="weather" value="흐림"> 흐림</label>
+            <label class="form-check"><input class="form-check-input" type="checkbox" name="weather" value="비"> 비</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="section-title">A 차량</div>
+          <div class="row g-2">
+            <div class="col-md-6">
+              <label class="form-label req">차량번호</label>
+              <input type="text" name="a_plate" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">보험사</label>
+              <input type="text" name="a_insurer" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label req">성명</label>
+              <input type="text" name="a_name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">주민번호</label>
+              <input type="text" name="a_id" class="form-control" placeholder="YYYYMMDD-1XXXXXX">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">전화번호</label>
+              <input type="text" name="a_phone" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">주소</label>
+              <input type="text" name="a_address" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">탑승인원(남)</label>
+              <input type="number" name="a_male" class="form-control" value="0" min="0">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">탑승인원(여)</label>
+              <input type="number" name="a_female" class="form-control" value="0" min="0">
+            </div>
+            <div class="col-12">
+              <label class="form-label">파손/특이사항</label>
+              <input type="text" name="a_damage_desc" class="form-control">
+            </div>
+          </div>
+          <!-- 손상부위 JSON(라벨리스트) -->
+          <input type="hidden" name="a_parts_json" id="a_parts_json" value="[]">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="section-title">B 차량</div>
+          <div class="row g-2">
+            <div class="col-md-6">
+              <label class="form-label req">차량번호</label>
+              <input type="text" name="b_plate" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">보험사</label>
+              <input type="text" name="b_insurer" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label req">성명</label>
+              <input type="text" name="b_name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">주민번호</label>
+              <input type="text" name="b_id" class="form-control" placeholder="YYYYMMDD-2XXXXXX">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">전화번호</label>
+              <input type="text" name="b_phone" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">주소</label>
+              <input type="text" name="b_address" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">탑승인원(남)</label>
+              <input type="number" name="b_male" class="form-control" value="0" min="0">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">탑승인원(여)</label>
+              <input type="number" name="b_female" class="form-control" value="0" min="0">
+            </div>
+            <div class="col-12">
+              <label class="form-label">파손/특이사항</label>
+              <input type="text" name="b_damage_desc" class="form-control">
+            </div>
+          </div>
+          <input type="hidden" name="b_parts_json" id="b_parts_json" value="[]">
+        </div>
+      </div>
+    </div>
+
+    <div class="card my-3">
+      <div class="card-body">
+        <div class="section-title">보행자(선택)</div>
+        <div class="row g-2">
+          <div class="col-md-6"><label class="form-label">성명</label><input type="text" name="p_name" class="form-control"></div>
+          <div class="col-md-6"><label class="form-label">주민번호</label><input type="text" name="p_id" class="form-control"></div>
+          <div class="col-md-6"><label class="form-label">전화번호</label><input type="text" name="p_phone" class="form-control"></div>
+          <div class="col-md-6"><label class="form-label">주소</label><input type="text" name="p_address" class="form-control"></div>
+          <div class="col-12"><label class="form-label">피해/특이사항</label><input type="text" name="p_damage_desc" class="form-control"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="row g-2">
+          <div class="col-12">
+            <label class="form-label">사고 개요</label>
+            <textarea name="accident_description" rows="3" class="form-control"></textarea>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">사고 형태(자동차대 자동차)</label>
+            <div class="grid-3">
+              <label class="form-check"><input class="form-check-input" type="checkbox" name="type_cc" value="직각충돌"> 직각충돌</label>
+              <label class="form-check"><input class="form-check-input" type="checkbox" name="type_cc" value="차로변경 충돌"> 차로변경 충돌</label>
+              <label class="form-check"><input class="form-check-input" type="checkbox" name="type_cc" value="후진충돌"> 후진충돌</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">사고 형태(자동차대 보행자)</label>
+            <div class="grid-3">
+              <label class="form-check"><input class="form-check-input" type="checkbox" name="type_cp" value="횡단보도 사고"> 횡단보도 사고</label>
+              <label class="form-check"><input class="form-check-input" type="checkbox" name="type_cp" value="도로 무단횡단"> 도로 무단횡단</label>
+              <label class="form-check"><input class="form-check-input" type="checkbox" name="type_cp" value="후진 중 보행자"> 후진 중 보행자</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <label class="form-label">사고 원인</label>
+            <div class="grid-3">
+              <label class="form-check"><input class="form-check-input" type="checkbox" name="cause" value="신호위반"> 신호위반</label>
+              <label class="form-check"><input class="form-check-input" type="checkbox" name="cause" value="안전거리 미확보"> 안전거리 미확보</label>
+              <label class="form-check"><input class="form-check-input" type="checkbox" name="cause" value="급차로변경"> 급차로변경</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-check mt-3">
+          <input id="mask_rrn" name="mask_rrn" type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="mask_rrn">주민번호 뒷자리 마스킹(출력화면 적용)</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex gap-2">
+      <button type="button" id="btnPreview" class="btn btn-outline-primary">미리보기</button>
+      <button type="submit" class="btn btn-primary">저장하고 출력</button>
+    </div>
+
+    <!-- 출력 포맷 힌트(서버 사이드 Fallback용) -->
+    <input type="hidden" name="format" value="pdf">
+  </form>
+
+</div>
+
+<script>
+  // 폼 → 로컬스토리지로 직렬화 후 미리보기 창 오픈
+  function formToObject(form){
+    const data = new FormData(form);
+    const F = {};
+    for (const [k, v] of data.entries()){
+      if (F[k] !== undefined){
+        if (Array.isArray(F[k])) F[k].push(v);
+        else F[k] = [F[k], v];
+      } else {
+        // 체크박스 다중 필드를 배열로
+        if (k === 'weather' || k === 'type_cc' || k === 'type_cp' || k === 'cause') F[k] = [v];
+        else F[k] = v;
+      }
+    }
+    // 누락된 다중 필드 빈배열 보정
+    ['weather','type_cc','type_cp','cause'].forEach(key=>{ if (!Array.isArray(F[key])) F[key] = F[key]? [F[key]]: []; });
+    return F;
+  }
+
+  document.getElementById('btnPreview').addEventListener('click', ()=>{
+    const form = document.getElementById('agreementForm');
+    const F = formToObject(form);
+    localStorage.setItem('print_payload', JSON.stringify(F));
+    const url = "{% url 'accident_project:agreement_preview' %}" + "?preview=1";
+    window.open(url, "_blank");
+  });
+</script>
+
+</body>
+</html>
