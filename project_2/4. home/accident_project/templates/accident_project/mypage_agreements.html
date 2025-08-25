@@ -1,0 +1,23 @@
+<!-- templates/mypage_agreements.html -->
+<table>
+  <thead>
+    <tr><th>제목</th><th>작성일</th><th>상태</th><th>액션</th></tr>
+  </thead>
+  <tbody>
+    {% for ag in agreements %}
+      <tr>
+        <td>{{ ag.title }}</td>
+        <td>{{ ag.created_at|date:"Y-m-d H:i" }}</td>
+        <td>{{ ag.status }}</td>
+        <td>
+          <a href="{% url 'agreement_print' ag.pk %}">보기</a>
+          <a href="{% url 'agreement_edit' ag.pk %}">수정</a>
+          <a href="{% url 'agreement_pdf' ag.pk %}">PDF</a>
+          <a href="{% url 'agreement_image' ag.pk %}">JPG</a>
+        </td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="4">작성한 협의서가 없습니다.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>

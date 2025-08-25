@@ -1,0 +1,633 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>교통사고 협의서 - 입력</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --card:#fff; --line:#e9e9e9; --text:#333;
+    --chip-text: rgba(51,51,51,.78);
+  }
+
+  /* Base */
+  body{font-family:'Malgun Gothic','맑은 고딕',system-ui; background:#f7f8fa; margin:0;}
+  .wrap{max-width:1100px;margin:24px auto;padding:16px;}
+  form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.04)}
+  h2{margin:28px 0 10px;border-bottom:2px solid #f0f0f0;padding-bottom:6px}
+  h3{margin:12px 0 8px}
+  fieldset{border:1px solid var(--line);border-radius:10px;padding:12px;margin:12px 0}
+  legend{padding:0 8px;font-weight:700}
+  label{display:block;margin:6px 0}
+  input,select,textarea{width:100%;padding:8px;border:1px solid #cfcfcf;border-radius:8px}
+  textarea{resize:vertical}
+
+  /* Grid helpers */
+  .grid{display:grid;gap:20px}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  fieldset label{ margin:8px 0 }
+  @media (max-width:900px){ .g2,.g3,.g4{grid-template-columns:1fr} }
+
+  /* Section cards & 2‑column layout */
+  .section-card{border:1px solid var(--line);border-radius:12px;background:#fff;padding:14px;margin:12px 0}
+  .section-split{display:grid;grid-template-columns:1.6fr 1fr;gap:16px}
+  .info-col{display:block}
+  .side-col{display:flex;flex-direction:column;gap:12px}
+  @media (max-width:900px){
+    .section-split{grid-template-columns:1fr}
+    /* 모바일 순서: 미리보기 → 손상부위 */
+    .side-col .preview-wrap{order:1}
+    .side-col .parts-wrap{order:2}
+  }
+
+  /* Parts selector */
+  .parts-grid{display:grid;gap:10px;grid-template-columns:repeat(4,minmax(0,1fr))}
+  .part-item{background:#fff;border:1px solid #eee;border-radius:10px;padding:8px 10px;font-size:14px}
+  @media (max-width:900px){ .parts-grid{grid-template-columns:repeat(2,1fr)} }
+
+  /* Chips (선택 순서, 파스텔 그라데이션) */
+  .chips{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,auto);gap:8px 8px;margin:8px 0 12px}
+  .chip{padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.05);
+        color:var(--chip-text);font-weight:700;white-space:nowrap;opacity:.9}
+  .chip:hover{opacity:1}
+
+  /* Preview image & mark */
+  .imgcard{border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px}
+  .imgcard .title{font-weight:700;margin-bottom:6px}
+  .imgbox{position:relative;width:100%;max-width:520px;margin:auto}
+  .imgbox img{width:100%;height:auto;display:block;border-radius:10px}
+  .mark{
+    position:absolute;transform:translate(-50%,-50%);
+    width:10px;height:10px;border-radius:50%;
+    z-index:20;                   /* 이미지보다 위 */
+    background:#f99;              /* JS에서 다시 색 입힘 */
+    box-shadow:0 0 0 2px rgba(0,0,0,.25); /* 테두리 가시성 ↑ */
+    border:1px solid rgba(255,255,255,.7); /* 흰색 외곽선 */
+    opacity:1;                  /* 너무 연하지 않게 */
+  }
+
+  /* Weather row: 한 줄 가로/가운데 */
+  .weather-row{display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;padding:6px 0}
+  .weather-row label{display:inline-flex !important;align-items:center;gap:6px;margin:0}
+  .weather-row input[type="checkbox"]{margin:0;vertical-align:middle}
+
+  /* Buttons */
+  .btns{display:flex;gap:10px;margin-top:16px}
+  .btn{padding:10px 16px;border:none;border-radius:10px;background:#111;color:#fff;font-weight:700;cursor:pointer}
+  .btn.light{background:#f2f2f2;color:#111;border:1px solid #ddd}
+
+  /* Toast */
+  .toast-container{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:9999}
+  .toast{background:#111;color:#fff;border-radius:10px;padding:10px 14px;margin-top:8px;opacity:.96}
+
+  /* Modal */
+  .modal{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;align-items:center;justify-content:center;z-index:10000}
+  .modal-body{width:min(1100px,95vw);height:min(90vh,800px);background:#fff;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+  .modal-head{padding:8px 10px;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center}
+  .modal-body iframe{flex:1;border:0}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<form method="post" action="{% url 'accident_project:agreement_submit' %}" id="agreement-form">
+  {% csrf_token %}
+
+  <!-- 기본정보 -->
+  <h2>기본정보</h2>
+  <div class="grid g2">
+    <label>사고 일시
+      <input type="text" id="accident_date_display" placeholder="YYYY-MM-DD HH:mm" readonly required>
+    </label>
+    <!-- 실제 전송값 -->
+    <input type="hidden" name="accident_date" id="accident_date_value" required>
+
+
+    <label>사고 장소 <input type="text" name="location" required></label>
+  </div>
+
+  <!-- ✅ 모달은 그리드(g2) 바깥으로 이동 -->
+  <dialog id="dateDialog">
+    <div style="padding:10px 12px">
+      <b>사고 일시 선택</b>
+      <input type="datetime-local" id="accident_date_picker" style="display:block;margin:10px 0" />
+      <div style="display:flex;gap:8px;justify-content:flex-end">
+        <button type="button" id="dateCancel">취소</button>
+        <button type="button" id="dateOk">완료</button>
+      </div>
+    </div>
+  </dialog>
+
+  <fieldset>
+    <legend>날씨</legend>
+    <div class="weather-row">
+      <label><input type="checkbox" name="weather" value="맑음"> 맑음</label>
+      <label><input type="checkbox" name="weather" value="흐림"> 흐림</label>
+      <label><input type="checkbox" name="weather" value="비"> 비</label>
+      <label><input type="checkbox" name="weather" value="눈"> 눈</label>
+      <label><input type="checkbox" name="weather" value="안개"> 안개</label>
+    </div>
+  </fieldset>
+  <!-- A 차량 -->
+  <h2>A 차량</h2>
+  <div class="section-card section-split">
+
+    <!-- 왼쪽: A 차량 정보 -->
+    <div class="info-col">
+      <div class="grid g2">
+        <label>차량번호
+          <input name="a_plate" placeholder="예: 12가3456" pattern="\d{2,3}[가-힣]\d{4}" required>
+        </label>
+        <label>보험사
+          <select name="a_insurer" required>
+            <option value="">보험사 선택</option>
+            <option value="메리츠화재">메리츠화재</option>
+            <option value="한화손해보험">한화손해보험</option>
+            <option value="롯데손해보험">롯데손해보험</option>
+            <option value="MG손해보험">MG손해보험</option>
+            <option value="흥국화재">흥국화재</option>
+            <option value="삼성화재">삼성화재</option>
+            <option value="AXA손해보험">AXA손해보험</option>
+            <option value="현대해상">현대해상</option>
+            <option value="DB손해보험">DB손해보험</option>
+            <option value="하나손해보험">하나손해보험</option>
+            <option value="캐롯손해보험">캐롯손해보험</option>
+          </select>
+        </label>
+        <label>성명 <input name="a_name" pattern="[가-힣]{2,5}" required></label>
+        <label>주민번호 <input name="a_id" pattern="\d{6}-[1-8]\d{6}" required></label>
+        <label>전화번호 <input name="a_phone" pattern="(010-\d{4}-\d{4}|0\d{1,2}-\d{3,4}-\d{4})" required></label>
+        <label>주소 <input name="a_address" required></label>
+      </div><!-- /.grid g2 -->
+
+      <fieldset>
+        <legend>탑승인원(운전자 제외)</legend>
+        <div class="grid g3">
+          <label>남 <input type="number" id="a_male" name="a_male" min="0" value="0" required></label>
+          <label>여 <input type="number" id="a_female" name="a_female" min="0" value="0" required></label>
+          <label>합계 <input type="text" id="a_total" value="0" readonly></label>
+        </div>
+      </fieldset>
+
+      <label>파손 정도/특이사항 (A)
+        <textarea name="a_damage_desc" rows="3" placeholder="예: 앞 범퍼 긁힘, 본넷 눌림 등"></textarea>
+      </label>
+    </div><!-- /.info-col -->
+
+    <!-- 오른쪽: A 미리보기 + 손상부위 선택 -->
+    <div class="side-col">
+      <div class="imgcard preview-wrap">
+        <div class="title">A 차량 미리보기</div>
+        <div class="imgbox" id="imgbox-a">
+          <img src="{% static 'images/damage_outline.png' %}" alt="">
+        </div>
+      </div>
+
+      <div class="section-card parts-wrap">
+        <h3 style="margin-top:0">A 차량 손상부위</h3>
+        <div class="chips" id="chips-a"></div>
+        <fieldset>
+          <legend>부위 선택(A)</legend>
+          <div class="parts-grid" id="parts-a"></div>
+        </fieldset>
+        <input type="hidden" id="a_parts_json" name="a_parts_json">
+      </div>
+    </div><!-- /.side-col -->
+
+  </div><!-- /.section-split -->
+
+  <!-- B 차량 -->
+  <h2>B 차량</h2>
+  <div class="section-card section-split">
+
+    <!-- 왼쪽: B 차량 정보 -->
+    <div class="info-col">
+      <div class="grid g2">
+        <label>차량번호
+          <input name="b_plate" placeholder="예: 34나5678" pattern="\d{2,3}[가-힣]\d{4}" required>
+        </label>
+        <label>보험사
+          <select name="b_insurer" required>
+            <option value="">보험사 선택</option>
+            <option value="메리츠화재">메리츠화재</option>
+            <option value="한화손해보험">한화손해보험</option>
+            <option value="롯데손해보험">롯데손해보험</option>
+            <option value="MG손해보험">MG손해보험</option>
+            <option value="흥국화재">흥국화재</option>
+            <option value="삼성화재">삼성화재</option>
+            <option value="AXA손해보험">AXA손해보험</option>
+            <option value="현대해상">현대해상</option>
+            <option value="DB손해보험">DB손해보험</option>
+            <option value="하나손해보험">하나손해보험</option>
+            <option value="캐롯손해보험">캐롯손해보험</option>
+          </select>
+        </label>
+        <label>성명 <input name="b_name" pattern="[가-힣]{2,5}" required></label>
+        <label>주민번호 <input name="b_id" pattern="\d{6}-[1-8]\d{6}" required></label>
+        <label>전화번호 <input name="b_phone" pattern="(010-\d{4}-\d{4}|0\d{1,2}-\d{3,4}-\d{4})" required></label>
+        <label>주소 <input name="b_address" required></label>
+      </div><!-- /.grid g2 -->
+
+      <fieldset>
+        <legend>탑승인원(운전자 제외)</legend>
+        <div class="grid g3">
+          <label>남 <input type="number" id="b_male" name="b_male" min="0" value="0" required></label>
+          <label>여 <input type="number" id="b_female" name="b_female" min="0" value="0" required></label>
+          <label>합계 <input type="text" id="b_total" value="0" readonly></label>
+        </div>
+      </fieldset>
+
+      <label>파손 정도/특이사항 (B)
+        <textarea name="b_damage_desc" rows="3" placeholder="예: 뒤 범퍼 눌림 등"></textarea>
+      </label>
+    </div><!-- /.info-col -->
+
+    <!-- 오른쪽: B 미리보기 + 손상부위 선택 -->
+    <div class="side-col">
+      <div class="imgcard preview-wrap">
+        <div class="title">B 차량 미리보기</div>
+        <div class="imgbox" id="imgbox-b">
+          <img src="{% static 'images/damage_outline.png' %}" alt="">
+        </div>
+      </div>
+
+      <div class="section-card parts-wrap">
+        <h3 style="margin-top:0">B 차량 손상부위</h3>
+        <div class="chips" id="chips-b"></div>
+        <fieldset>
+          <legend>부위 선택(B)</legend>
+          <div class="parts-grid" id="parts-b"></div>
+        </fieldset>
+        <input type="hidden" id="b_parts_json" name="b_parts_json">
+      </div>
+    </div><!-- /.side-col -->
+
+  </div><!-- /.section-split -->
+
+
+
+  <!-- 보행자 -->
+  <h2>보행자(선택)</h2>
+  <div class="section-card">
+    <div class="grid g2">
+      <label>성명 <input name="p_name"></label>
+      <label>주민번호 <input name="p_id" pattern="\d{6}-[1-8]\d{6}"></label>
+      <label>전화번호 <input name="p_phone" pattern="(010-\d{4}-\d{4}|0\d{1,2}-\d{3,4}-\d{4})"></label>
+      <label>주소 <input name="p_address"></label>
+    </div>
+    <label>피해정도/특이사항(보행자)
+      <textarea name="p_damage_desc" rows="3"></textarea>
+    </label>
+  </div>
+  <!-- 사고내용 -->
+  <h2>사고내용</h2>
+  <div class="section-card">
+    <fieldset>
+      <legend>사고 형태</legend>
+      <div class="grid g4">  <!-- 4열로 가로 나열 -->
+        <label><input type="checkbox" name="type_cc" value="정면충돌"> 정면충돌</label>
+        <label><input type="checkbox" name="type_cc" value="후미추돌(진행중)"> 후미추돌(진행중)</label>
+        <label><input type="checkbox" name="type_cc" value="후미추돌(주정차중)"> 후미추돌(주정차중)</label>
+        <label><input type="checkbox" name="type_cc" value="측면충돌"> 측면충돌</label>
+        <label><input type="checkbox" name="type_cc" value="후진사고"> 후진사고</label>
+        <label><input type="checkbox" name="type_cp" value="횡단보도 통행중"> 횡단보도 통행중</label>
+        <label><input type="checkbox" name="type_cp" value="무단횡단중"> 무단횡단중</label>
+        <label><input type="checkbox" name="type_cp" value="차도가장자리 통행중"> 차도가장자리 통행중</label>
+        <label><input type="checkbox" name="type_cp" value="보도 통행중"> 보도 통행중</label>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="section-card">
+    <fieldset>
+      <legend>사고 원인</legend>
+      <div class="grid g4">
+        <label><input type="checkbox" name="cause" value="음주·주취운전"> 음주·주취운전</label>
+        <label><input type="checkbox" name="cause" value="신호위반"> 신호위반</label>
+        <label><input type="checkbox" name="cause" value="중앙선침범"> 중앙선침범</label>
+        <label><input type="checkbox" name="cause" value="속도위반"> 속도위반</label>
+        <label><input type="checkbox" name="cause" value="횡단보도위반"> 횡단보도위반</label>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="section-card">
+    <label>구체적 사고 개요 및 특이사항
+      <textarea name="accident_description" rows="4" required></textarea>
+    </label>
+  </div>
+
+  <!-- 동의 -->
+  <h2>동의</h2>
+  <label><input type="checkbox" name="agree" required> 개인정보 제공 및 이용에 동의합니다.</label>
+
+  <div class="controls">
+  <label>
+    <input type="checkbox" name="mask_rrn"> 주민번호 뒷자리 마스킹
+  </label>
+  </div>
+  <div class="btns">
+    <button class="btn light" type="button" id="btn-preview">미리보기</button>
+    <button class="btn" type="submit" name="format" value="jpg">JPG 다운로드</button>
+    <button class="btn" type="submit" name="format" value="pdf">PDF 다운로드</button>
+  </div>
+</form>
+</div>
+
+<!-- 1) 서버에서 내려오는 JSON (반드시 body 안, script보다 위) -->
+{{ part_anchors|json_script:"part-anchors" }}
+{{ label_colors|json_script:"label-colors" }}
+
+<!-- 미리보기 모달 -->
+<div class="modal" id="modal">
+  <div class="modal-body">
+    <div class="modal-head">
+      <strong>미리보기</strong>
+      <button class="btn light" id="modal-close">닫기</button>
+    </div>
+    <iframe id="preview-frame" src="about:blank"></iframe>
+  </div>
+</div>
+
+<script>
+// 서버에서 내려준 상수 (constants.py → views.py → 템플릿)
+const PART_ANCHORS = JSON.parse(document.getElementById('part-anchors').textContent);      // dict[str, [c1,c2]]
+const LABEL_COLORS = JSON.parse(document.getElementById('label-colors').textContent);   // dict[str, {x,y}]
+const PARTS = Object.keys(PART_ANCHORS);
+console.log('anchors loaded', PART_ANCHORS);
+console.log('colors loaded', LABEL_COLORS);
+// if(!window.PART_ANCHORS){ console.error('PART_ANCHORS missing'); }
+// if(!window.LABEL_COLORS){ console.error('LABEL_COLORS missing'); }
+
+// ===== A/B 손상부위 체크 UI 생성 =====
+function buildParts(containerId, chipsId, hiddenId, imgBoxId){
+  const cont   = document.getElementById(containerId);  if(!cont) return;
+  const chips  = document.getElementById(chipsId);      if(!chips) return;
+  const hidden = document.getElementById(hiddenId);     if(!hidden) return;
+  const imgBox = document.getElementById(imgBoxId);     if(!imgBox) return;
+  const sel = []; // 선택 순서
+
+  // 1) 체크박스 생성
+  PARTS.forEach(label=>{
+    const wrap = document.createElement('label');
+    wrap.className = 'part-item';
+    wrap.innerHTML = `<input type="checkbox" value="${label}"> ${label}`;
+    cont.appendChild(wrap);
+    const cb = wrap.querySelector('input');
+
+    cb.addEventListener('change', ()=>{
+      if(cb.checked){ if(!sel.includes(label)) sel.push(label); }
+      else{ const i = sel.indexOf(label); if(i>-1) sel.splice(i,1); }
+      hidden.value = JSON.stringify(sel);
+      renderChips(); 
+      renderMarks();
+    });
+  });
+
+  // 2) 칩 렌더링(선택 순서대로, 파스텔 그라데이션)
+  function renderChips(){
+    chips.innerHTML = '';
+    sel.forEach(label=>{
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'chip';
+      const [c1,c2] = (LABEL_COLORS[label] || ["#eaeefc","#f7f9ff"]);
+      chip.style.background = `linear-gradient(90deg, ${c1}, ${c2})`;
+      chip.textContent = label;
+      chip.onclick = ()=>{
+        const cb = cont.querySelector(`input[value="${label}"]`);
+        if(cb){ cb.checked = false; cb.dispatchEvent(new Event('change')); }
+        // 칩 조작 시 미리보기 위치로 스크롤
+        const card = imgBox.closest('.imgcard');
+        if(card){ card.scrollIntoView({behavior:'smooth', block:'center'}); }
+      };
+      chips.appendChild(chip);
+    });
+  }
+
+  // 3) 마크 렌더링(라벨 좌표에 파스텔 점)
+  function renderMarks(){
+    imgBox.querySelectorAll('.mark').forEach(m=>m.remove());
+
+    sel.forEach(lb=>{
+      const pt = PART_ANCHORS[lb];
+      if(!pt){ console.warn('no anchor for', lb); return; }
+
+      const dot = document.createElement('div');
+      dot.className = 'mark';
+      dot.style.left = pt.x + '%';
+      dot.style.top  = pt.y + '%';
+
+      const [c1] = (LABEL_COLORS[lb] || ['#ff3b30']);
+      dot.style.background = c1;
+      dot.style.width = '12px';   // ← 테스트로 크게
+      dot.style.height = '12px';  // ← 테스트로 크게
+      dot.style.zIndex = '10';
+      imgBox.appendChild(dot);
+    });
+  }
+
+
+  // 4) 초기값 복원(수정 화면에서 hidden에 값이 이미 있는 경우)
+  try{
+    const initial = JSON.parse(hidden.value || '[]');
+    if(Array.isArray(initial) && initial.length){
+      initial.forEach(label=>{
+        const cb = cont.querySelector(`input[value="${label}"]`);
+        if(cb){ cb.checked = true; if(!sel.includes(label)) sel.push(label); }
+      });
+      hidden.value = JSON.stringify(sel);
+      renderChips(); renderMarks();
+    }
+  }catch(_){ /* 무시 */ }
+
+  // 초깃값 저장
+  hidden.value = JSON.stringify(sel);
+  return { getSelected: ()=> sel };
+}
+
+// ===== 초기화 =====
+const A = buildParts('parts-a','chips-a','a_parts_json','imgbox-a');
+const B = buildParts('parts-b','chips-b','b_parts_json','imgbox-b');
+
+// ===== 탑승인원 합계 =====
+function bindPassenger(prefix){
+  const male  = document.getElementById(prefix+'_male');
+  const female= document.getElementById(prefix+'_female');
+  const total = document.getElementById(prefix+'_total');
+  if(!male || !female || !total) return;
+  const update = ()=>{ const m=+male.value||0, f=+female.value||0; total.value = (m+f); };
+  male.addEventListener('input',update);
+  female.addEventListener('input',update);
+  update();
+}
+bindPassenger('a'); bindPassenger('b');
+
+// ===== 필수 섹션 게이트 =====
+function requiredOK(){
+  const names = [
+    "accident_date","location",
+    "a_plate","a_insurer","a_name","a_id","a_phone","a_address",
+    "b_plate","b_insurer","b_name","b_id","b_phone","b_address",
+    "accident_description"
+  ];
+  for(const n of names){
+    const el=document.querySelector(`[name="${n}"]`);
+    if(!el || !String(el.value||'').trim()) return false;
+  }
+  return true;
+}
+const formEl = document.getElementById('agreement-form');
+if(formEl){
+  formEl.addEventListener('submit', e=>{
+    const fmt = e.submitter?.value || '';
+    if((fmt==='jpg'||fmt==='pdf') && !requiredOK()){
+      e.preventDefault();
+      toast('필수 항목 작성 후 다운로드 가능합니다.');
+    }
+  });
+}
+
+// ===== 미리보기: 모달 + iframe (세션 기반 print 뷰) =====
+  // 미리보기: 로컬스토리지 저장 → 미리보기 라우트 로드
+  const btnPrev = document.getElementById('btn-preview');
+  if (btnPrev) {
+    btnPrev.addEventListener('click', () => {
+      if (typeof requiredOK === 'function' && !requiredOK()) {
+        if (typeof toast === 'function') toast('필수 항목 입력 후 미리보기가 가능합니다.');
+        return;
+      }
+
+      // 1) form의 현재 값 JSON으로 저장 (이미 저장하는 함수가 있으면 그걸 호출)
+      const form = document.getElementById('agreement-form');
+      const data = Object.fromEntries(new FormData(form).entries());
+      // 다중선택 name들은 getAll로:
+      data.weather  = Array.from(new FormData(form).getAll('weather'));
+      data.type_cc  = Array.from(new FormData(form).getAll('type_cc'));
+      data.type_cp  = Array.from(new FormData(form).getAll('type_cp'));
+      data.cause    = Array.from(new FormData(form).getAll('cause'));
+      // (손상 마커 등 hidden 값들도 이미 form에 있으면 자동 포함됩니다)
+      localStorage.setItem('print_payload', JSON.stringify(data));
+
+      // 2) 미리보기 모달 열고 preview 템플릿 로드
+      const modal = document.getElementById('modal');
+      const frame = document.getElementById('preview-frame');
+      const url   = "{% url 'accident_project:agreement_preview' %}?preview=1"; // ✅ pk 불필요
+      if (modal && frame) {
+        frame.src = url;                // ❗이 줄만 필요 (agreement_print 금지)
+        modal.style.display = 'flex';
+      }
+    });
+  }
+const btnClose = document.getElementById('modal-close');
+if(btnClose){
+  btnClose.onclick = ()=>{ const modal=document.getElementById('modal'); if(modal) modal.style.display='none'; };
+}
+
+// ===== 토스트 =====
+function toast(msg){
+  const host = document.querySelector('.toast-container') || (()=>{
+    const d=document.createElement('div'); d.className='toast-container'; document.body.appendChild(d); return d;
+  })();
+  const t=document.createElement('div'); t.className='toast'; t.textContent=msg; host.appendChild(t);
+  setTimeout(()=>t.remove(), 1800);
+}
+
+// ===== 날짜 모달 =====
+const dlg  = document.getElementById('dateDialog');
+const disp = document.getElementById('accident_date_display');
+const pick = document.getElementById('accident_date_picker');
+const val  = document.getElementById('accident_date_value');
+
+// YYYY-MM-DD HH:mm
+function fmt(dt){
+  const z=n=>String(n).padStart(2,'0');
+  return `${dt.getFullYear()}-${z(dt.getMonth()+1)}-${z(dt.getDate())} ${z(dt.getHours())}:${z(dt.getMinutes())}`;
+}
+
+if(disp && dlg && pick && val){
+  // 표시용 클릭 → 모달 열기(기존값 반영)
+  disp.addEventListener('click', ()=>{
+    if(val.value){
+      const iso = val.value.includes('T') ? val.value : val.value.replace(' ', 'T');
+      pick.value = iso;
+    }
+    dlg.showModal();
+  });
+
+  // 완료/취소
+  const btnCancel = document.getElementById('dateCancel');
+  const btnOk     = document.getElementById('dateOk');
+  if(btnCancel){ btnCancel.onclick = ()=> dlg.close(); }
+  if(btnOk){
+    btnOk.onclick = ()=>{
+      if(!pick.value){ alert('날짜/시간을 선택하세요.'); return; }
+      val.value  = pick.value;                 // 서버 전송값
+      disp.value = fmt(new Date(pick.value));  // 사용자 표시값
+      dlg.close();
+    };
+  }
+
+  // 외부 클릭 닫기
+  dlg.addEventListener('click', (e)=>{
+    const rect = dlg.getBoundingClientRect();
+    const inside = (e.clientX>=rect.left && e.clientX<=rect.right && e.clientY>=rect.top && e.clientY<=rect.bottom);
+    if(!inside) dlg.close();
+  });
+
+  // 최초 로드 시 기존값 표시
+  (function hydrate(){
+    if(!val || !val.value) return;
+    const iso = val.value.includes('T') ? val.value : val.value.replace(' ', 'T');
+    const d = new Date(iso);
+    if(!isNaN(d)) disp.value = fmt(d);
+  })();
+}
+
+async function upsertRecordThen(runNext){
+  // 폼 스냅샷 가져오기(너의 현재 구조에 맞게 조정)
+  let F = {};
+  try { F = JSON.parse(localStorage.getItem('print_payload') || '{}'); } catch(e){ F = {}; }
+
+  // 최소 필드 보정 (없을 때 대비)
+  const payload = F;
+  const data = {
+    accident_date: F.accident_date || F.accident_date_display || new Date().toISOString(),
+    location: F.location || '',
+    a_plate: F.a_plate || '',
+    b_plate: F.b_plate || '',
+    payload: payload   // 주민번호는 마스킹된 값으로 들어가도록 유지
+  };
+
+  const resp = await fetch("{% url 'record_upsert_api' %}", {
+    method: "POST",
+    headers: {"Content-Type": "application/json", "X-CSRFToken": getCsrf()},
+    body: JSON.stringify(data)
+  }).then(r=>r.json()).catch(()=>({ok:false}));
+
+  if (!resp || !resp.ok) {
+    console.warn("기록 저장 실패(다운로드는 계속 진행):", resp);
+  }
+  runNext && runNext(resp?.id);
+}
+
+function getCsrf(){
+  const el = document.querySelector('input[name=csrfmiddlewaretoken]');
+  return el ? el.value : (document.cookie.match(/csrftoken=([^;]+)/)?.[1] || "");
+}
+
+// PDF 버튼에 연결 예시:
+async function onClickDownloadPDF(){
+  await upsertRecordThen(()=> exportPDF('print-root')); // 기존 함수 호출
+}
+
+// JPG 버튼에 연결 예시:
+async function onClickDownloadJPG(){
+  await upsertRecordThen(()=> exportAgreementJpg('print-root')); // 네가 쓰는 JPG 함수명에 맞춰 변경
+}
+</script>
+</body>
+</html>
